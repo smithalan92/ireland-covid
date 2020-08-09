@@ -2,6 +2,7 @@ const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
 module.exports = {
+  outputDir: 'docs',
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', path.join(__dirname, 'src'));
