@@ -1,7 +1,12 @@
 {
   "name": "cork-covid",
   "version": "0.1.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smithalan92/cork-daily-covid-cases.git"
+  },
+  "author": "Alan Smith",
+  "license": "MIT",
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
