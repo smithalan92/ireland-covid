@@ -1,0 +1,27 @@
+<template>
+  <div class="app">
+    <div class="app__header">
+      <span class="app__header-title">
+        Cork daily confirmed COVID-19 cases
+      </span>
+      <span class="app__header-subtitle">
+        All data sourced from <a href="https://covid19ireland-geohive.hub.arcgis.com" target="_blank">HPSC/HSE Geohive</a>. Data may be a few days behind.
+      </span>
+    </div>
+    <div class="app__body">
+      <chart-section
+        v-for="(item, index) in orderedData"
+        :key="item.month"
+        :force-inital-expand="index === 0"
+        :records="item.data"
+        :title="item.month"/>
+    </div>
+    <div class="app__footer">
+      <a
+        href="https://github.com/smithalan92"
+        target="_blank">github.com/smithalan92</a>
+    </div>
+  </div>
+</template>
+<script src="./App.js"></script>
+<style src="./App.scss" lang="scss"></style>
