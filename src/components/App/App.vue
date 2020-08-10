@@ -8,6 +8,9 @@
         All data sourced from <a href="https://covid19ireland-geohive.hub.arcgis.com" target="_blank">HPSC/HSE Geohive</a>. County reporting lags behind by 2 or 3 days.
       </span>
       <span class="app__header-subtitle">
+        Latest data is from <span class="app__header-subtitle--bold">{{ lastRecordDate }}</span>
+      </span>
+      <span class="app__header-subtitle">
         Made by <a
         href="https://github.com/smithalan92"
         target="_blank">github.com/smithalan92</a>
@@ -15,9 +18,12 @@
     </div>
     <div class="app__body">
       <chart-section
-        v-for="(item, index) in orderedData"
+        :force-inital-expand="true"
+        :records="allRecords"
+        title="All Time"/>
+      <chart-section
+        v-for="item in orderedData"
         :key="item.month"
-        :force-inital-expand="index === 0"
         :records="item.data"
         :title="item.month"/>
     </div>

@@ -21,7 +21,18 @@ export default {
   data() {
     return {
       orderedData: [],
+      allData: [],
+      lastRecordDate: null,
     };
+  },
+
+  computed: {
+    allRecords() {
+      return this.orderedData
+        .map((y) => y.data)
+        .flat()
+        .sort((a, b) => new Date(a.date) - new Date(b.date));
+    },
   },
 
   methods: {
@@ -44,12 +55,16 @@ export default {
     // If today is the same date as the last record date, just use the cache
     if (savedData && moment(savedData.lastRecordDate).isSame(moment(), 'day')) {
       this.orderedData = savedData.data;
+      this.lastRecordDate = moment(savedData.lastRecordDate).format('Do MMMM YYYY');
       return;
     }
 
     const { data } = await axios.get(DATA_URL);
 
-    const lastRecordDate = moment(data.features[data.features.length - 1].TimeStamp);
+    const latestTimestamp = data.features[data.features.length - 1].attributes.TimeStamp;
+    const lastRecordDate = moment(latestTimestamp);
+
+    this.lastRecordDate = lastRecordDate.format('Do MMMM YYYY');
 
     // If the latest record from the API is the same as the cached last record date
     // just use the cache

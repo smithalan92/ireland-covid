@@ -33,7 +33,7 @@ export default {
 
   computed: {
     categories() {
-      return this.records.map((r) => `${moment(r.date).format('Do')} ${this.title}`);
+      return this.records.map((r) => `${moment(r.date).format('Do MMM')}`);
     },
 
     data() {
