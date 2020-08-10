@@ -2,6 +2,8 @@
 
 A simple app to graph the amount of new COVID-19 cases in Cork, Ireland each day using data sourced from the [HPSC/HSE Geohive](https://covid19ireland-geohive.hub.arcgis.com/).
 
+View - [covid-cork.mralansmith.com/](http://covid-cork.mralansmith.com/)
+
 
 ![](./img/screenshot.png)
 
