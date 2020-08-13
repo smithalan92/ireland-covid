@@ -5,10 +5,15 @@
         Cork daily confirmed COVID-19 cases
       </span>
       <span class="app__header-subtitle">
-        All data sourced from <a href="https://covid19ireland-geohive.hub.arcgis.com" target="_blank">HPSC/HSE Geohive</a>. County reporting lags behind by 2 or 3 days.
+        All data sourced from <a href="https://covid19ireland-geohive.hub.arcgis.com" target="_blank">HPSC/HSE Geohive</a>. County reporting lags behind by a few days.
       </span>
       <span class="app__header-subtitle">
-        Latest data is from <span class="app__header-subtitle--bold">{{ lastRecordDate }}</span>
+        Latest data is from
+        <span class="app__header-subtitle--bold">{{ lastRecordDate }}</span>.
+        There were
+        <span class="app__header-subtitle--bold">
+          {{ totalCases }}
+        </span> confirmed cases in Cork at that time.
       </span>
       <span class="app__header-subtitle">
         Made by <a

@@ -33,6 +33,14 @@ export default {
         .flat()
         .sort((a, b) => new Date(a.date) - new Date(b.date));
     },
+
+    totalCases() {
+      if (!this.allRecords.length) return 0;
+
+      if (this.allRecords.length === 1) return this.allRecords[0].totalConfirmedCovidCases;
+
+      return this.allRecords[this.allRecords.length - 1].totalConfirmedCovidCases;
+    },
   },
 
   methods: {
@@ -61,7 +69,10 @@ export default {
 
     const { data } = await axios.get(CORK_DATA_URL);
 
-    const latestTimestamp = data.features[data.features.length - 1].attributes.TimeStamp;
+    // We're getting bad timestamps back from the API. Need to filter out timestamps in the future
+    let corkData = data.features.filter(({ attributes }) => !moment(attributes.TimeStamp).isAfter(moment(), 'day'));
+
+    const latestTimestamp = corkData[corkData.length - 1].attributes.TimeStamp;
     const lastRecordDate = moment(latestTimestamp);
 
     this.lastRecordDate = lastRecordDate.format('Do MMMM YYYY');
@@ -73,7 +84,7 @@ export default {
       return;
     }
 
-    let corkData = data.features.map((r, index) => {
+    corkData = corkData.map((r, index) => {
       const { ConfirmedCovidCases, TimeStamp } = r.attributes;
       let casesSincePrevious = 0;
 
@@ -87,11 +98,9 @@ export default {
         date: new Date(TimeStamp).toISOString(),
         count: ConfirmedCovidCases,
         casesSincePrevious,
+        totalConfirmedCovidCases: ConfirmedCovidCases,
       };
     });
-
-    // The API is returning incorrect timestamps ( 1 month ahead ) so filter them out for now
-    corkData = corkData.filter((record) => !moment(record.date).isAfter(moment(), 'day'));
 
     this.parseData(corkData);
 
