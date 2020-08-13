@@ -4,12 +4,12 @@ import axios from 'axios';
 import moment from 'moment';
 import { groupBy } from 'lodash';
 
-const CACHE_KEY = 'v1';
+const CACHE_KEY = 'v2';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-// This URL seems to be static...for now anyway.
-const DATA_URL = 'https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/Covid19CountyStatisticsHPSCIreland/FeatureServer/0/query?f=json&where=(TimeStamp%3Etimestamp%20%272020-03-20%2023%3A59%3A59%27)%20AND%20(CountyName%3D%27Cork%27)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=TimeStamp%20asc&resultOffset=0&resultRecordCount=4000&resultType=standard&cacheHint=true';
+// These URLs seems to be static...for now anyway.
+const CORK_DATA_URL = 'https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/Covid19CountyStatisticsHPSCIreland/FeatureServer/0/query?f=json&where=(TimeStamp%3Etimestamp%20%272020-03-20%2023%3A59%3A59%27)%20AND%20(CountyName%3D%27Cork%27)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=TimeStamp%20asc&resultOffset=0&resultRecordCount=4000&resultType=standard&cacheHint=true';
 
 export default {
   name: 'App',
@@ -59,7 +59,7 @@ export default {
       return;
     }
 
-    const { data } = await axios.get(DATA_URL);
+    const { data } = await axios.get(CORK_DATA_URL);
 
     const latestTimestamp = data.features[data.features.length - 1].attributes.TimeStamp;
     const lastRecordDate = moment(latestTimestamp);
@@ -73,7 +73,7 @@ export default {
       return;
     }
 
-    const corkData = data.features.map((r, index) => {
+    let corkData = data.features.map((r, index) => {
       const { ConfirmedCovidCases, TimeStamp } = r.attributes;
       let casesSincePrevious = 0;
 
@@ -89,6 +89,9 @@ export default {
         casesSincePrevious,
       };
     });
+
+    // The API is returning incorrect timestamps ( 1 month ahead ) so filter them out for now
+    corkData = corkData.filter((record) => !moment(record.date).isAfter(moment(), 'day'));
 
     this.parseData(corkData);
 

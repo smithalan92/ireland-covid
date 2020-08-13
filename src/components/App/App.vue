@@ -25,7 +25,8 @@
         v-for="item in orderedData"
         :key="item.month"
         :records="item.data"
-        :title="item.month"/>
+        :title="item.month"
+        :force-inital-expand="false"/>
     </div>
   </div>
 </template>
