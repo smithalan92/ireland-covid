@@ -4,14 +4,16 @@
       class="chart-section__header"
       @click="onClickToggle">
      <v-col cols="11">
-        {{ title }}
+        {{ title }} confirmed cases
       </v-col>
       <v-col
         class="d-flex justify-center align-center"
         cols="1">
-        <arrow
+        <v-icon
           class="chart-section__header-toggle-arrow"
-          :class="{ 'chart-section__header-toggle-arrow--expanded': isBodyVisible }"/>
+          :class="{ 'chart-section__header-toggle-arrow--expanded': isBodyVisible }">
+          {{ mdiChevronDown }}
+        </v-icon>
       </v-col>
     </v-card-title>
     <v-card-text v-show="isBodyVisible">

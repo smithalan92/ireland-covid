@@ -1,6 +1,6 @@
 import Chart from '@/components/Chart';
 import moment from 'moment';
-import Arrow from '@/assets/down-arrow.svg';
+import { mdiChevronDown } from '@mdi/js';
 
 export default {
   name: 'ChartSection',
@@ -22,12 +22,12 @@ export default {
 
   components: {
     Chart,
-    Arrow,
   },
 
   data() {
     return {
       isBodyVisible: false,
+      mdiChevronDown,
     };
   },
 
