@@ -1,57 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-
 // Global Overrides
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
 }
 
 a {
     color: rgb(137, 174, 216);
 }
 
-.app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding: 24px;
+.app__container {
+    margin-top: 56px;
 }
 
-.app__body {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 100%;
-    align-items: center;
-    max-width: 1200px;
+.app__loading-icon {
+    animation: spinner 0.5s infinite linear;
 }
 
-.app__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    text-align: center;
-}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
 
-.app__header-title {
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.app__header-subtitle {
-    margin: 8px 0;
-}
-
-.app__header-subtitle--bold {
-    font-weight: 600;
-}
-
-.app__footer {
-    text-align: center;
+    100% {
+        transform: rotate(360deg);
+    }
 }

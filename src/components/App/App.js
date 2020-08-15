@@ -1,15 +1,13 @@
 /* eslint-disable no-param-reassign */
 import ChartSection from '@/components/ChartSection';
-import axios from 'axios';
+import api from '@/api';
 import moment from 'moment';
 import { groupBy } from 'lodash';
+import { mdiLoading } from '@mdi/js';
 
 const CACHE_KEY = 'v2';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-// These URLs seems to be static...for now anyway.
-const CORK_DATA_URL = 'https://services1.arcgis.com/eNO7HHeQ3rUcBllm/arcgis/rest/services/Covid19CountyStatisticsHPSCIreland/FeatureServer/0/query?f=json&where=(TimeStamp%3Etimestamp%20%272020-03-20%2023%3A59%3A59%27)%20AND%20(CountyName%3D%27Cork%27)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=TimeStamp%20asc&resultOffset=0&resultRecordCount=4000&resultType=standard&cacheHint=true';
 
 export default {
   name: 'App',
@@ -21,8 +19,11 @@ export default {
   data() {
     return {
       orderedData: [],
-      allData: [],
+      totalIrishCases: 0,
+      totalIrishDeaths: 0,
       lastRecordDate: null,
+      isFinishedLoading: false,
+      mdiLoading,
     };
   },
 
@@ -41,11 +42,47 @@ export default {
 
       return this.allRecords[this.allRecords.length - 1].totalConfirmedCovidCases;
     },
+
+    previous30DayCases() {
+      return this.allRecords
+        .slice(this.allRecords.length - 30, this.allRecords.length)
+        // eslint-disable-next-line no-return-assign
+        .reduce((acc, current) => acc += current.casesSincePrevious, 0);
+    },
   },
 
   methods: {
-    parseData(savedData) {
-      const groupedData = groupBy(savedData, (r) => moment(r.date).format('MMMM'));
+    async loadCorkData() {
+      let corkData = await api.getCorkCaseBreakdown();
+
+      // We're getting bad timestamps back from the API. Need to filter out timestamps in the future
+      corkData = corkData.filter(({ TimeStamp }) => !moment(TimeStamp).isAfter(moment(), 'day'));
+
+      const latestTimestamp = corkData[corkData.length - 1].TimeStamp;
+      const lastRecordDate = moment(latestTimestamp);
+
+      this.lastRecordDate = lastRecordDate.format('Do MMMM YYYY');
+
+      corkData = corkData.map(({ ConfirmedCovidCases, TimeStamp }, index) => {
+        let casesSincePrevious = 0;
+
+        if (index > 0) {
+          const previousConfirmedCases = corkData[index - 1].ConfirmedCovidCases;
+          const differenceSincePrevious = ConfirmedCovidCases - previousConfirmedCases;
+          casesSincePrevious = differenceSincePrevious > 0 ? differenceSincePrevious : 0;
+        }
+
+        return {
+          date: new Date(TimeStamp).toISOString(),
+          count: ConfirmedCovidCases,
+          casesSincePrevious,
+          totalConfirmedCovidCases: ConfirmedCovidCases,
+        };
+      });
+
+      // Group the data nicely by months in reverse
+      const groupedData = groupBy(corkData, (r) => moment(r.date).format('MMMM'));
+
       MONTHS.reverse().forEach((month) => {
         if (groupedData[month]) {
           this.orderedData.push({
@@ -54,6 +91,33 @@ export default {
           });
         }
       });
+
+      return lastRecordDate;
+    },
+
+    async loadDataFromAPI() {
+      const [lastRecordDate, totalIrishCases, totalIrishDeaths] = await Promise.all([
+        this.loadCorkData(),
+        api.getTotalIrishCases(),
+        api.getTotalIrishDeaths(),
+      ]);
+
+      this.totalIrishCases = totalIrishCases;
+      this.totalIrishDeaths = totalIrishDeaths;
+
+      this.isFinishedLoading = true;
+
+      this.saveDataToLocalStorage(lastRecordDate);
+    },
+
+    saveDataToLocalStorage(lastRecordDate) {
+      const dataToSave = {
+        lastRecordDate,
+        corkData: this.orderedData,
+        totalIrishCases: this.totalIrishCases,
+        totalIrishDeaths: this.totalIrishDeaths,
+      };
+      localStorage.setItem(`cached-data-${CACHE_KEY}`, JSON.stringify(dataToSave));
     },
   },
 
@@ -64,51 +128,12 @@ export default {
     if (savedData && moment(savedData.lastRecordDate).isSame(moment(), 'day')) {
       this.orderedData = savedData.data;
       this.lastRecordDate = moment(savedData.lastRecordDate).format('Do MMMM YYYY');
-      return;
+
+      await this.$nextTick();
+
+      this.isFinishedLoading = true;
+    } else {
+      this.loadDataFromAPI();
     }
-
-    const { data } = await axios.get(CORK_DATA_URL);
-
-    // We're getting bad timestamps back from the API. Need to filter out timestamps in the future
-    let corkData = data.features.filter(({ attributes }) => !moment(attributes.TimeStamp).isAfter(moment(), 'day'));
-
-    const latestTimestamp = corkData[corkData.length - 1].attributes.TimeStamp;
-    const lastRecordDate = moment(latestTimestamp);
-
-    this.lastRecordDate = lastRecordDate.format('Do MMMM YYYY');
-
-    // If the latest record from the API is the same as the cached last record date
-    // just use the cache
-    if (savedData && lastRecordDate.isSame(moment(savedData.lastRecordDate), 'day')) {
-      this.orderedData = savedData.data;
-      return;
-    }
-
-    corkData = corkData.map((r, index) => {
-      const { ConfirmedCovidCases, TimeStamp } = r.attributes;
-      let casesSincePrevious = 0;
-
-      if (index > 0) {
-        const previousConfirmedCases = data.features[index - 1].attributes.ConfirmedCovidCases;
-        const differenceSincePrevious = ConfirmedCovidCases - previousConfirmedCases;
-        casesSincePrevious = differenceSincePrevious > 0 ? differenceSincePrevious : 0;
-      }
-
-      return {
-        date: new Date(TimeStamp).toISOString(),
-        count: ConfirmedCovidCases,
-        casesSincePrevious,
-        totalConfirmedCovidCases: ConfirmedCovidCases,
-      };
-    });
-
-    this.parseData(corkData);
-
-    const dataToSave = {
-      lastRecordDate,
-      data: this.orderedData,
-    };
-
-    localStorage.setItem(`cached-data-${CACHE_KEY}`, JSON.stringify(dataToSave));
   },
 };

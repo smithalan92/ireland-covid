@@ -1,38 +1,19 @@
-.chart-section {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(163, 163, 163);
-    border-radius: 4px;
-    padding: 16px;
-    width: 100%;
-    margin-bottom: 8px;
-    box-sizing: border-box;
-}
-
 .chart-section__header {
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     user-select: none;
     cursor: pointer;
-}
 
-.chart-section__header-toggle {
-    padding: 4px;
-
-    &--body-visible {
+    &:hover {
         .chart-section__header-toggle-arrow {
-            transform: rotate(180deg);
+            fill: rgba(0, 0, 0, 0.4);
         }
     }
 }
 
 .chart-section__header-toggle-arrow {
     width: 20px;
-}
+    fill: #000;
 
-.chart-section__body {
-    display: flex;
-    padding: 12px 0;
+    &--expanded {
+        transform: rotate(180deg);
+    }
 }
