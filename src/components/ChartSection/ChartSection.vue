@@ -1,24 +1,26 @@
 <template>
-  <div class="chart-section">
-    <div
+  <v-card>
+    <v-card-title
       class="chart-section__header"
-      @click="isBodyVisible = !isBodyVisible">
-      <div class="chart-section__header-title">{{ title }}</div>
-      <div
-        class="chart-section__header-toggle"
-        :class="{ 'chart-section__header-toggle--body-visible': isBodyVisible }">
-        <arrow class="chart-section__header-toggle-arrow"/>
-      </div>
-    </div>
-    <div
-      class="chart-section__body"
-      v-show="isBodyVisible">
+      @click="onClickToggle">
+     <v-col cols="11">
+        {{ title }}
+      </v-col>
+      <v-col
+        class="d-flex justify-center align-center"
+        cols="1">
+        <arrow
+          class="chart-section__header-toggle-arrow"
+          :class="{ 'chart-section__header-toggle-arrow--expanded': isBodyVisible }"/>
+      </v-col>
+    </v-card-title>
+    <v-card-text v-show="isBodyVisible">
       <chart
         :categories="categories"
         :data="data"
         series-name="Daily new cases"/>
-    </div>
-  </div>
+    </v-card-text>
+  </v-card>
 </template>
 <script src="./ChartSection.js"></script>
 <style src="./ChartSection.scss" lang="scss"></style>

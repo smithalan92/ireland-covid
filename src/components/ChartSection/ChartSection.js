@@ -41,6 +41,16 @@ export default {
     },
   },
 
+  methods: {
+    async onClickToggle() {
+      this.isBodyVisible = !this.isBodyVisible;
+      if (this.isBodyVisible) {
+        await this.$nextTick();
+        this.$el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    },
+  },
+
   mounted() {
     if (this.forceInitalExpand) this.isBodyVisible = true;
   },
