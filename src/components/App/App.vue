@@ -24,43 +24,21 @@
           <v-col
            cols="12"
            v-show="isFinishedLoading">
-           <v-row>
-              <v-col cols="6">
-                <v-card>
-                  <v-card-title>
-                    {{ totalIrishCases }}
-                  </v-card-title>
-                  <v-card-subtitle>
-                    confirmed cases in Ireland.
-                  </v-card-subtitle>
-                </v-card>
-              </v-col>
-              <v-col cols="6">
-                <v-card>
-                  <v-card-title>
-                    {{ totalIrishDeaths }}
-                  </v-card-title>
-                  <v-card-subtitle>
-                    confirmed deaths in Ireland.
-                  </v-card-subtitle>
-                </v-card>
-              </v-col>
-            </v-row>
             <v-row>
               <v-col cols="4">
                 <v-card>
                   <v-card-title>
-                    {{ lastRecordDate }}
+                    {{ latestCorkDataDateTime }}
                   </v-card-title>
                   <v-card-subtitle>
-                    latest data provided.
+                    latest data provided for Cork.
                   </v-card-subtitle>
                 </v-card>
               </v-col>
               <v-col cols="4">
                 <v-card>
                   <v-card-title>
-                    {{ totalCases }}
+                    {{ totalCorkCases }}
                   </v-card-title>
                   <v-card-subtitle>
                     total confirmed cases in Cork.
@@ -70,10 +48,32 @@
               <v-col cols="4">
                 <v-card>
                   <v-card-title>
-                    {{ previous30DayCases }}
+                    {{ totalCorkCasesInPast30Days }}
                   </v-card-title>
                   <v-card-subtitle>
                     confirmed cases in Cork in past 30 days.
+                  </v-card-subtitle>
+                </v-card>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="6">
+                <v-card>
+                  <v-card-title>
+                    {{ totalIrishCases }}
+                  </v-card-title>
+                  <v-card-subtitle>
+                    confirmed cases in Ireland as of {{ latestIrishDataDateTime }}.
+                  </v-card-subtitle>
+                </v-card>
+              </v-col>
+              <v-col cols="6">
+                <v-card>
+                  <v-card-title>
+                    {{ totalIrishDeaths }}
+                  </v-card-title>
+                  <v-card-subtitle>
+                    confirmed deaths in Ireland as of {{ latestIrishDataDateTime }}.
                   </v-card-subtitle>
                 </v-card>
               </v-col>
@@ -122,7 +122,7 @@
         <v-col
           class="text-center"
           cols="12">
-          Made by <a
+          Data automatically refreshes at 7pm each day.<br>Made by <a
             href="https://github.com/smithalan92"
             target="_blank">github.com/smithalan92</a>
         </v-col>

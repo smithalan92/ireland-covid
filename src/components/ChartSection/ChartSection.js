@@ -37,7 +37,7 @@ export default {
     },
 
     data() {
-      return this.records.map((r) => r.casesSincePrevious);
+      return this.records.map((r) => r.newCases);
     },
   },
 
