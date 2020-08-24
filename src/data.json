@@ -1,10 +1,10 @@
 {
-    "totalIrishCases": 27969,
+    "totalIrishCases": 28116,
     "totalIrishDeaths": 1777,
-    "latestIrishDataDateTime": "2020-08-23T19:30:09.791Z",
-    "latestCorkDataDateTime": "2020-08-21T00:00:00.000Z",
-    "totalCasesInCork": 1612,
-    "totalCorkCasesInPast30Days": 52,
+    "latestIrishDataDateTime": "2020-08-24T18:02:02.209Z",
+    "latestCorkDataDateTime": "2020-08-22T00:00:00.000Z",
+    "totalCasesInCork": 1614,
+    "totalCorkCasesInPast30Days": 54,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -620,6 +620,10 @@
         },
         {
             "date": "2020-08-21T00:00:00.000Z",
+            "newCases": 2
+        },
+        {
+            "date": "2020-08-22T00:00:00.000Z",
             "newCases": 2
         }
     ]
