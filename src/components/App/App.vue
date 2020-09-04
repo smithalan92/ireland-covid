@@ -3,8 +3,7 @@
     <v-main>
       <v-app-bar
         class="justify-center"
-        :fixed="true"
-        color="grey lighten-3">
+        :fixed="true">
           <v-toolbar-title class="flex-grow-1 text-h5 font-weight-bold text-center">
             Cork confirmed COVID-19 cases
           </v-toolbar-title>
@@ -60,7 +59,7 @@
               <v-col cols="6">
                 <v-card>
                   <v-card-title>
-                    {{ totalIrishCases }}
+                    {{ totalIrishCases }} (+{{ changeInIrishCases }})
                   </v-card-title>
                   <v-card-subtitle>
                     confirmed cases in Ireland as of {{ latestIrishDataDateTime }}.
@@ -70,7 +69,7 @@
               <v-col cols="6">
                 <v-card>
                   <v-card-title>
-                    {{ totalIrishDeaths }}
+                    {{ totalIrishDeaths }} (+{{ changeInIrishDeaths }})
                   </v-card-title>
                   <v-card-subtitle>
                     confirmed deaths in Ireland as of {{ latestIrishDataDateTime }}.

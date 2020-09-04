@@ -3,6 +3,8 @@ import ChartSection from '@/components/ChartSection';
 import moment from 'moment';
 import { groupBy } from 'lodash';
 import { mdiLoading } from '@mdi/js';
+import Highcharts from 'highcharts';
+import highchartsDarkTheme from 'highcharts/themes/high-contrast-dark';
 import caseData from '../../data.json';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -21,10 +23,13 @@ export default {
       totalIrishDeaths: caseData.totalIrishDeaths,
       latestIrishDataDateTime: moment(caseData.latestIrishDataDateTime).format('Do MMMM'),
       latestCorkDataDateTime: moment(caseData.latestCorkDataDateTime).format('Do MMMM'),
+      changeInIrishCases: 0,
+      changeInIrishDeaths: 0,
       totalCorkCases: 0,
       totalCorkCasesInPast30Days: 0,
       isFinishedLoading: false,
       mdiLoading,
+
     };
   },
 
@@ -45,6 +50,8 @@ export default {
       this.latestCorkDataDateTime = moment(caseData.latestCorkDataDateTime).format('Do MMMM YYYY');
       this.totalCorkCases = caseData.totalCasesInCork;
       this.totalCorkCasesInPast30Days = caseData.totalCorkCasesInPast30Days;
+      this.changeInIrishCases = caseData.changeInIrishCases;
+      this.changeInIrishDeaths = caseData.changeInIrishDeaths;
 
       // Group the data nicely by months in reverse
       const groupedData = groupBy(caseData.corkData, (r) => moment(r.date).format('MMMM'));
@@ -66,5 +73,9 @@ export default {
     this.isFinishedLoading = false;
     this.parseData();
     this.isFinishedLoading = true;
+  },
+
+  created() {
+    highchartsDarkTheme(Highcharts);
   },
 };
