@@ -9,8 +9,18 @@ a {
     color: rgb(137, 174, 216);
 }
 
+.app__tabs {
+    padding: 8px 0;
+}
+
 .app__container {
     margin-top: 56px;
+    padding: 0 !important;
+    background: #151515;
+}
+
+.app__content {
+    padding: 12px;
 }
 
 .app__loading-icon {

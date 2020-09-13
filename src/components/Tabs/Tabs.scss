@@ -1,0 +1,16 @@
+.tabs {
+    margin-top: 16px;
+    display: flex;
+    background: #1E1E1E;
+    flex: 1;
+}
+
+.tabs__tab {
+    padding: 8px 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &--selected {
+        background: #151515;
+    }
+}
