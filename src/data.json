@@ -1,13 +1,13 @@
 {
-    "totalIrishCases": 30895,
+    "totalIrishCases": 31192,
     "totalIrishDeaths": 1784,
-    "changeInIrishCases": 255,
-    "changeInIrishDeaths": 1,
-    "irishCasesInPast30Days": 4040,
-    "latestIrishDataDateTime": "2020-09-13T18:04:53.551Z",
-    "latestCorkDataDateTime": "2020-09-11T00:00:00.000Z",
-    "totalCasesInCork": 1681,
-    "totalCorkCasesInPast30Days": 92,
+    "changeInIrishCases": 208,
+    "changeInIrishDeaths": 0,
+    "irishCasesInPast30Days": 4048,
+    "latestIrishDataDateTime": "2020-09-14T18:00:00.833Z",
+    "latestCorkDataDateTime": "2020-09-12T00:00:00.000Z",
+    "totalCasesInCork": 1683,
+    "totalCorkCasesInPast30Days": 91,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -414,7 +414,7 @@
             "newCases": 0
         },
         {
-            "date": "2020-06-29T00:00:00.000Z",
+            "date": "2020-06-30T00:00:00.000Z",
             "newCases": 0
         },
         {
@@ -708,6 +708,10 @@
         {
             "date": "2020-09-11T00:00:00.000Z",
             "newCases": 6
+        },
+        {
+            "date": "2020-09-12T00:00:00.000Z",
+            "newCases": 2
         }
     ],
     "irishData": [
@@ -1690,6 +1694,11 @@
             "date": "2020-09-13T00:00:00.000Z",
             "newCases": 255,
             "newDeaths": 1
+        },
+        {
+            "date": "2020-09-14T00:00:00.000Z",
+            "newCases": 208,
+            "newDeaths": 0
         }
     ]
 }
