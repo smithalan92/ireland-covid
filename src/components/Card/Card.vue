@@ -3,6 +3,11 @@
     <div class="card__title">
       <slot name="title"/>
     </div>
+    <div
+      class="card__subtitle"
+      v-if="$slots.subtitle">
+      <slot name="subtitle"/>
+    </div>
     <div class="card__body">
       <slot name="body"/>
     </div>

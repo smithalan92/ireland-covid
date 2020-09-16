@@ -5,7 +5,7 @@
         <template v-slot:title>
           {{ latestCorkDataDateTime }}
         </template>
-        <template v-slot:body>
+        <template v-slot:subtitle>
           latest data provided for Cork.
         </template>
       </card>
@@ -13,7 +13,7 @@
         <template v-slot:title>
           {{ totalCorkCases }}
         </template>
-        <template v-slot:body>
+        <template v-slot:subtitle>
           total confirmed cases in Cork.
         </template>
       </card>
@@ -21,7 +21,7 @@
         <template v-slot:title>
           {{ totalCorkCasesInPast30Days }}
         </template>
-        <template v-slot:body>
+        <template v-slot:subtitle>
           confirmed cases in Cork in past 30 days.
         </template>
       </card>

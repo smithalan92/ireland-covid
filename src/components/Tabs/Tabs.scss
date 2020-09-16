@@ -6,9 +6,10 @@
 
 .tabs__tab {
     font-size: 18px;
-    padding: 8px 12px;
+    padding: 8px 24px;
     text-transform: uppercase;
     cursor: pointer;
+    background: #1E1E1E;
 
     &--selected {
         background: #151515;

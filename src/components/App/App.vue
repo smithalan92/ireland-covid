@@ -1,17 +1,19 @@
 <template>
   <div class="app">
     <div class="app__header">
-      Cork confirmed COVID-19 cases
+     <div class="app__header-title">Cork confirmed COVID-19 cases</div>
+     <tabs
+        class="app__tabs"
+        @selectTab="selectTab"/>
     </div>
     <div class="app__container">
-      <tabs @selectTab="selectTab"/>
       <router-view class="app__content"/>
     </div>
     <div class="app__footer">
-      <div>
+      <div class="app__footer-text">
         All data sourced from <a href="https://covid19ireland-geohive.hub.arcgis.com" target="_blank">HPSC/HSE Geohive</a>. County reporting lags behind by a few days.
       </div>
-      <div>
+      <div class="app__footer-text">
         Data automatically refreshes at 7pm each day.<br>Made by <a
           href="https://github.com/smithalan92"
           target="_blank">github.com/smithalan92</a>
