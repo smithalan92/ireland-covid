@@ -1,19 +1,18 @@
-import { mapGetters, mapState } from 'vuex';
+import { mapState } from 'vuex';
 import ChartSection from '@/components/ChartSection';
+import Card from '@/components/Card';
 
 export default {
   name: 'Ireland',
 
   components: {
     ChartSection,
+    Card,
   },
 
   computed: {
-    ...mapGetters({
-      allRecords: 'getAllIrishData',
-    }),
-
     ...mapState([
+      'allIrishData',
       'totalIrishCases',
       'totalIrishDeaths',
       'totalIrishCasesInPast30Days',

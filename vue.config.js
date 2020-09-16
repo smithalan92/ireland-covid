@@ -3,9 +3,6 @@ const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
 module.exports = {
   outputDir: 'docs',
-  transpileDependencies: [
-    'vuetify',
-  ],
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', path.join(__dirname, 'src'));

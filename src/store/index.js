@@ -20,7 +20,9 @@ const state = {
   totalCorkCases: 0,
   totalCorkCasesInPast30Days: 0,
   latestCorkDataDateTime: 0,
+  allCorkData: [],
   orderedCorkData: [],
+  allIrishData: [],
   orderedIrishData: [],
 };
 
@@ -40,12 +42,14 @@ const mutations = {
     state.latestCorkDataDateTime = data.latestCorkDataDateTime;
   },
 
-  SET_ORDERED_CORK_DATA(state, data) {
-    state.orderedCorkData = [...data];
+  SET_CORK_DATA(state, { orderedCorkData, allCorkData }) {
+    state.orderedCorkData = orderedCorkData;
+    state.allCorkData = allCorkData;
   },
 
-  SET_ORDERED_IRISH_DATA(state, data) {
-    state.orderedIrishData = [...data];
+  SET_IRISH_DATA(state, { orderedIrishData, allIrishData }) {
+    state.orderedIrishData = orderedIrishData;
+    state.allIrishData = allIrishData;
   },
 };
 
@@ -62,11 +66,14 @@ const actions = {
     const totalCorkCasesInPast30Days = util.formatNumber(caseData.totalCorkCasesInPast30Days);
     const latestCorkDataDateTime = moment(caseData.latestCorkDataDateTime).format('Do MMMM YYYY');
 
+    const allCorkData = caseData.corkData.sort((a, b) => new Date(a.date) - new Date(b.date));
+    const allIrishData = caseData.irishData.sort((a, b) => new Date(a.date) - new Date(b.date));
+
     // Group the data nicely by months in reverse
-    const groupedCorkData = groupBy(caseData.corkData, (r) => moment(r.date).format('MMMM'));
+    const groupedCorkData = groupBy(allCorkData, (r) => moment(r.date).format('MMMM'));
     const orderedCorkData = [];
 
-    const groupedIrishData = groupBy(caseData.irishData, (r) => moment(r.date).format('MMMM'));
+    const groupedIrishData = groupBy(allIrishData, (r) => moment(r.date).format('MMMM'));
     const orderedIrishData = [];
 
     MONTHS.reverse().forEach((month) => {
@@ -100,26 +107,12 @@ const actions = {
       latestCorkDataDateTime,
     });
 
-    commit('SET_ORDERED_CORK_DATA', orderedCorkData);
-    commit('SET_ORDERED_IRISH_DATA', orderedIrishData);
+    commit('SET_CORK_DATA', { orderedCorkData, allCorkData });
+    commit('SET_IRISH_DATA', { orderedIrishData, allIrishData });
   },
 };
 
-const getters = {
-  getAllCorkData(state) {
-    return state.orderedCorkData
-      .map((r) => r.data)
-      .flat()
-      .sort((a, b) => new Date(a.date) - new Date(b.date));
-  },
-
-  getAllIrishData(state) {
-    return state.orderedIrishData
-      .map((r) => r.data)
-      .flat()
-      .sort((a, b) => new Date(a.date) - new Date(b.date));
-  },
-};
+const getters = {};
 
 const store = new Vuex.Store({
   state,

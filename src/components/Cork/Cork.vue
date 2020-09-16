@@ -1,66 +1,49 @@
 <template>
-  <v-row>
-    <v-col cols="12">
-      <v-row>
-        <v-col cols="4">
-          <v-card height="100%">
-            <v-card-title>
-              {{ latestCorkDataDateTime }}
-            </v-card-title>
-            <v-card-subtitle>
-              latest data provided for Cork.
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col cols="4">
-          <v-card height="100%">
-            <v-card-title>
-              {{ totalCorkCases }}
-            </v-card-title>
-            <v-card-subtitle>
-              total confirmed cases in Cork.
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col cols="4">
-          <v-card height="100%">
-            <v-card-title>
-              {{ totalCorkCasesInPast30Days }}
-            </v-card-title>
-            <v-card-subtitle>
-              confirmed cases in Cork in past 30 days.
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12">
-          <v-row>
-            <v-col
-              class="pb-0"
-              cols="12">
-              <chart-section
-                :force-inital-expand="true"
-                :records="allRecords"
-                title="All Time"/>
-            </v-col>
-          </v-row>
-          <v-row
-            v-for="item in orderedCorkData"
-            :key="item.month">
-            <v-col
-              class="pb-0"
-              cols="12">
-              <chart-section
-                :records="item.data"
-                :title="item.month"
-                :force-inital-expand="false"/>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-    </v-col>
-  </v-row>
+  <div class="cork">
+    <div class="cork__stats">
+      <card class="cork__stats-card">
+        <template v-slot:title>
+          {{ latestCorkDataDateTime }}
+        </template>
+        <template v-slot:subtitle>
+          latest data provided for Cork.
+        </template>
+      </card>
+      <card class="cork__stats-card">
+        <template v-slot:title>
+          {{ totalCorkCases }}
+        </template>
+        <template v-slot:subtitle>
+          total confirmed cases in Cork.
+        </template>
+      </card>
+      <card class="cork__stats-card">
+        <template v-slot:title>
+          {{ totalCorkCasesInPast30Days }}
+        </template>
+        <template v-slot:subtitle>
+          confirmed cases in Cork in past 30 days.
+        </template>
+      </card>
+    </div>
+    <div class="cork__charts">
+      <div class="cork__chart">
+        <chart-section
+          :force-inital-expand="true"
+          :records="allCorkData"
+          title="All Time"/>
+      </div>
+      <div
+        class="cork__chart"
+        v-for="item in orderedCorkData"
+        :key="item.month">
+        <chart-section
+          :records="item.data"
+          :title="item.month"
+          :force-inital-expand="false"/>
+      </div>
+    </div>
+  </div>
 </template>
 <script src="./Cork.js"></script>
 <style src="./Cork.scss" lang="scss"></style>

@@ -1,66 +1,49 @@
 <template>
-  <v-row>
-    <v-col cols="12">
-      <v-row>
-        <v-col cols="4">
-          <v-card height="100%">
-            <v-card-title>
-              {{ totalIrishCases }} (+{{ changeInIrishCases }})
-            </v-card-title>
-            <v-card-subtitle>
-              confirmed cases in Ireland as of {{ latestIrishDataDateTime }}.
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col cols="4">
-          <v-card height="100%">
-            <v-card-title>
-              {{ totalIrishDeaths }} (+{{ changeInIrishDeaths }})
-            </v-card-title>
-            <v-card-subtitle>
-              confirmed deaths in Ireland as of {{ latestIrishDataDateTime }}.
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-        <v-col cols="4">
-          <v-card height="100%">
-            <v-card-title>
-              {{ totalIrishCasesInPast30Days }}
-            </v-card-title>
-            <v-card-subtitle>
-              confirmed cases in Ireland in past 30 days.
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12">
-          <v-row>
-            <v-col
-              class="pb-0"
-              cols="12">
-              <chart-section
-                :force-inital-expand="true"
-                :records="allRecords"
-                title="All Time"/>
-            </v-col>
-          </v-row>
-          <v-row
-            v-for="item in orderedIrishData"
-            :key="item.month">
-            <v-col
-              class="pb-0"
-              cols="12">
-              <chart-section
-                :records="item.data"
-                :title="item.month"
-                :force-inital-expand="false"/>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-    </v-col>
-  </v-row>
+  <div class="ireland">
+    <div class="ireland__stats">
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ totalIrishCases }} (+{{ changeInIrishCases }})
+        </template>
+        <template v-slot:subtitle>
+          confirmed cases in Ireland as of {{ latestIrishDataDateTime }}.
+        </template>
+      </card>
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ totalIrishDeaths }} (+{{ changeInIrishDeaths }})
+        </template>
+        <template v-slot:subtitle>
+          confirmed deaths in Ireland as of {{ latestIrishDataDateTime }}.
+        </template>
+      </card>
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ totalIrishCasesInPast30Days }}
+        </template>
+        <template v-slot:subtitle>
+          confirmed cases in Ireland in past 30 days.
+        </template>
+      </card>
+    </div>
+    <div class="ireland__charts">
+      <div class="ireland__chart">
+        <chart-section
+          :force-inital-expand="true"
+          :records="allIrishData"
+          title="All Time"/>
+      </div>
+      <div
+        class="ireland__chart"
+        v-for="item in orderedIrishData"
+        :key="item.month">
+        <chart-section
+          :records="item.data"
+          :title="item.month"
+          :force-inital-expand="false"/>
+      </div>
+    </div>
+  </div>
 </template>
 <script src="./Ireland.js"></script>
 <style src="./Ireland.scss" lang="scss"></style>

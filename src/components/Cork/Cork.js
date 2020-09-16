@@ -1,19 +1,18 @@
-import { mapGetters, mapState } from 'vuex';
+import { mapState } from 'vuex';
 import ChartSection from '@/components/ChartSection';
+import Card from '@/components/Card';
 
 export default {
   name: 'Cork',
 
   components: {
     ChartSection,
+    Card,
   },
 
   computed: {
-    ...mapGetters({
-      allRecords: 'getAllCorkData',
-    }),
-
     ...mapState([
+      'allCorkData',
       'totalCorkCases',
       'totalCorkCasesInPast30Days',
       'latestCorkDataDateTime',

@@ -1,0 +1,24 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+    padding: 12px;
+    border-radius: 4px;
+    flex: 1;
+    color: #fff;
+}
+
+.card__title {
+    font-size: 22px;
+    padding: 8px 0;
+}
+
+.card__subtitle {
+    color: rgb(207, 207, 207);
+    font-size: 12px;
+}
+
+.card__body {
+    flex: 1;
+    font-size: 12px;
+}
