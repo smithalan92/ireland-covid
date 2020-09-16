@@ -1,3 +1,22 @@
 .ireland {
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ireland__stats {
+    display: flex;
+}
+
+.ireland__stats-card {
+    margin: 8px;
+}
+
+.ireland__charts {
+    display: flex;
+    flex-direction: column;
+}
+
+.ireland__chart {
+    margin-top: 12px;
 }

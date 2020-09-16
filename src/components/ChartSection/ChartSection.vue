@@ -1,28 +1,28 @@
 <template>
-  <v-card>
-    <v-card-title
-      class="chart-section__header"
-      @click="onClickToggle">
-     <v-col cols="11">
-        {{ title }} confirmed cases
-      </v-col>
-      <v-col
-        class="d-flex justify-center align-center"
-        cols="1">
-        <v-icon
-          class="chart-section__header-toggle-arrow"
-          :class="{ 'chart-section__header-toggle-arrow--expanded': isBodyVisible }">
-          {{ mdiChevronDown }}
-        </v-icon>
-      </v-col>
-    </v-card-title>
-    <v-card-text v-show="isBodyVisible">
-      <chart
-        :categories="categories"
-        :data="data"
-        series-name="Daily new cases"/>
-    </v-card-text>
-  </v-card>
+  <card>
+    <template v-slot:title>
+      <div
+        class="chart-section__title"
+        @click="onClickToggle">
+        <div class="chart-section__title-text">
+          {{ title }} confirmed cases
+        </div>
+        <caret
+          class="chart-section__title-toggle-icon"
+          :class="{'chart-section__title-toggle-icon--expanded': isBodyVisible }"/>
+      </div>
+    </template>
+    <template v-slot:body>
+      <div
+        class="chart-section__body"
+        v-show="isBodyVisible">
+        <chart
+          :categories="categories"
+          :data="data"
+          series-name="Daily new cases"/>
+      </div>
+    </template>
+  </card>
 </template>
 <script src="./ChartSection.js"></script>
 <style src="./ChartSection.scss" lang="scss"></style>

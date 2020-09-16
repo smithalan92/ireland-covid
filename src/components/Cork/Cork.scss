@@ -1,3 +1,22 @@
 .cork {
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cork__stats {
+    display: flex;
+}
+
+.cork__stats-card {
+    margin: 8px;
+}
+
+.cork__charts {
+    display: flex;
+    flex-direction: column;
+}
+
+.cork__chart {
+    margin-top: 12px;
 }

@@ -1,6 +1,7 @@
 import Chart from '@/components/Chart';
+import Card from '@/components/Card';
+import Caret from '@/assets/caret.svg';
 import moment from 'moment';
-import { mdiChevronDown } from '@mdi/js';
 
 export default {
   name: 'ChartSection',
@@ -22,12 +23,13 @@ export default {
 
   components: {
     Chart,
+    Card,
+    Caret,
   },
 
   data() {
     return {
       isBodyVisible: false,
-      mdiChevronDown,
     };
   },
 

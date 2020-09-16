@@ -1,17 +1,27 @@
-.chart-section__header {
+.chart-section__title {
+    display: flex;
+    align-items: center;
     user-select: none;
     cursor: pointer;
 
     &:hover {
-        .chart-section__header-toggle-arrow {
-            fill: rgba(0, 0, 0, 0.4);
+        .chart-section__title-toggle-icon {
+            fill: rgba(#fff, 0.7);
         }
     }
 }
 
-.chart-section__header-toggle-arrow {
+.chart-section__title-text {
+    flex: 1;
+}
+
+.chart-section__title-toggle {
+    padding: 4px;
+}
+
+.chart-section__title-toggle-icon {
+    fill: #fff;
     width: 20px;
-    fill: #000;
 
     &--expanded {
         transform: rotate(180deg);
