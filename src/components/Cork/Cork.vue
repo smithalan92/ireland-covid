@@ -11,7 +11,7 @@
       </card>
       <card class="cork__stats-card">
         <template v-slot:title>
-          {{ totalCorkCases }}
+          {{ totalCorkCases }} (+{{ newCorkCases }})
         </template>
         <template v-slot:subtitle>
           total confirmed cases in Cork.

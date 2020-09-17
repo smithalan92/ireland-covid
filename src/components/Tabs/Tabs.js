@@ -16,4 +16,8 @@ export default {
       this.$emit('selectTab', tab);
     },
   },
+
+  created() {
+    this.selectedTab = this.$route.name;
+  },
 };

@@ -18,5 +18,9 @@ export default {
       'latestCorkDataDateTime',
       'orderedCorkData',
     ]),
+
+    newCorkCases() {
+      return this.allCorkData[this.allCorkData.length - 1].newCases;
+    },
   },
 };

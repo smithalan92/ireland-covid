@@ -15,7 +15,7 @@
     <template v-slot:body>
       <div
         class="chart-section__body"
-        v-show="isBodyVisible">
+        v-if="isBodyVisible">
         <chart
           :categories="categories"
           :data="data"
