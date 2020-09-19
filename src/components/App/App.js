@@ -1,5 +1,3 @@
-/* eslint-disable no-param-reassign */
-import { mdiLoading } from '@mdi/js';
 import Highcharts from 'highcharts';
 import highchartsDarkTheme from 'highcharts/themes/high-contrast-dark';
 import Tabs from '@/components/Tabs';
@@ -9,12 +7,6 @@ export default {
 
   components: {
     Tabs,
-  },
-
-  data() {
-    return {
-      mdiLoading,
-    };
   },
 
   methods: {

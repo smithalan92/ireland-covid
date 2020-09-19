@@ -1,14 +1,11 @@
 /* eslint-disable no-shadow */
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { createStore } from 'vuex';
 import moment from 'moment';
 import { groupBy } from 'lodash';
 import caseData from '@/data.json';
 import util from '@/util';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-Vue.use(Vuex);
 
 const state = {
   totalIrishCases: 0,
@@ -114,7 +111,7 @@ const actions = {
 
 const getters = {};
 
-const store = new Vuex.Store({
+const store = createStore({
   state,
   mutations,
   actions,

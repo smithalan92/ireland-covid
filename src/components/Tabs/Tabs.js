@@ -13,7 +13,7 @@ export default {
   methods: {
     onSelectTab(tab) {
       this.selectedTab = tab;
-      this.$emit('selectTab', tab);
+      this.$emit('select-tab', tab);
     },
   },
 

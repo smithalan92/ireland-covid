@@ -4,7 +4,7 @@
      <div class="app__header-title">Cork confirmed COVID-19 cases</div>
      <tabs
         class="app__tabs"
-        @selectTab="selectTab"/>
+        @select-tab="selectTab"/>
     </div>
     <div class="app__container">
       <router-view class="app__content"/>

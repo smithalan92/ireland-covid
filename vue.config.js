@@ -18,7 +18,11 @@ module.exports = {
 
     const svgRule = config.module.rule('svg');
     svgRule.uses.clear();
+
     svgRule
+      .use('vue-loader')
+      .loader('vue-loader-v16') // `vue-loader-v16` for preview support of Vue 3 in Vue CLI
+      .end()
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
       .options({
