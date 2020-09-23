@@ -1,10 +1,14 @@
-import { h, computed, ref, onMounted, watch, onUnmounted } from 'vue';
-import Highcharts from 'highcharts';
+import { h, computed } from 'vue';
+import VueHighcharts from 'vue3-highcharts';
 
 import './Chart.scss';
 
 export default {
   name: 'Chart',
+
+  components: {
+    VueHighcharts,
+  },
 
   props: {
     categories: {
@@ -53,27 +57,6 @@ export default {
       }],
     }));
 
-    const chartRef = ref(null);
-
-    const chart = ref(null);
-
-    onMounted(() => {
-      chart.value = Highcharts.chart(chartRef.value, chartOptions.value);
-    });
-
-    watch(chartOptions, () => {
-      if (chart.value) {
-        chart.value.update(chartOptions.value, true, true, true);
-      }
-    });
-
-    onUnmounted(() => {
-      if (chart.value) chart.value.destroy();
-    });
-
-    return () => h('div', {
-      class: 'chart',
-      ref: chartRef,
-    });
+    return () => h(VueHighcharts, { options: chartOptions });
   },
 };
