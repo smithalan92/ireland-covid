@@ -25,6 +25,11 @@ export default {
       required: false,
       default: '',
     },
+
+    type: {
+      type: String,
+      required: true,
+    },
   },
 
   setup(props) {
@@ -42,6 +47,7 @@ export default {
         title: {
           text: 'Number of new cases',
         },
+        opposite: false,
       },
       plotOptions: {
         line: {
@@ -57,6 +63,9 @@ export default {
       }],
     }));
 
-    return () => h(VueHighcharts, { options: chartOptions });
+    return () => h(VueHighcharts, {
+      options: chartOptions,
+      type: props.type,
+    });
   },
 };

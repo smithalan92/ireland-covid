@@ -17,6 +17,7 @@
         class="chart-section__body"
         v-if="isBodyVisible">
         <chart
+          :type="type"
           :categories="categories"
           :data="data"
           series-name="Daily new cases"/>

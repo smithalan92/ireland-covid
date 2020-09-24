@@ -1,6 +1,7 @@
 import Highcharts from 'highcharts';
 import highchartsDarkTheme from 'highcharts/themes/high-contrast-dark';
 import Tabs from '@/components/Tabs';
+import StockCharts from 'highcharts/modules/stock';
 
 export default {
   name: 'App',
@@ -17,6 +18,7 @@ export default {
 
   created() {
     highchartsDarkTheme(Highcharts);
+    StockCharts(Highcharts);
     this.$store.dispatch('processData');
   },
 };

@@ -31,13 +31,8 @@
         <chart-section
           :force-inital-expand="true"
           :records="allCorkData"
-          title="All Time"/>
-      </div>
-      <div class="cork__chart">
-        <chart-section
-          :force-inital-expand="false"
-          :records="pastThreeMonthCorkData"
-          title="Past 3 months"/>
+          type="stockChart"
+          title="All time overview"/>
       </div>
       <div
         class="cork__chart"

@@ -41,16 +41,14 @@ const mutations = {
     state.latestCorkDataDateTime = data.latestCorkDataDateTime;
   },
 
-  SET_CORK_DATA(state, { orderedCorkData, allCorkData, pastThreeMonthCorkData }) {
+  SET_CORK_DATA(state, { orderedCorkData, allCorkData }) {
     state.orderedCorkData = orderedCorkData;
     state.allCorkData = allCorkData;
-    state.pastThreeMonthCorkData = pastThreeMonthCorkData;
   },
 
-  SET_IRISH_DATA(state, { orderedIrishData, allIrishData, pastThreeMonthIrishData }) {
+  SET_IRISH_DATA(state, { orderedIrishData, allIrishData }) {
     state.orderedIrishData = orderedIrishData;
     state.allIrishData = allIrishData;
-    state.pastThreeMonthIrishData = pastThreeMonthIrishData;
   },
 };
 
@@ -69,14 +67,6 @@ const actions = {
 
     const allCorkData = caseData.corkData.sort((a, b) => new Date(a.date) - new Date(b.date));
     const allIrishData = caseData.irishData.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-    const threeMonthsAgo = moment().subtract('3', 'months');
-
-    const pastThreeMonthCorkData = allCorkData
-      .filter(({ date }) => moment(date).isAfter(threeMonthsAgo));
-
-    const pastThreeMonthIrishData = allIrishData
-      .filter(({ date }) => moment(date).isAfter(threeMonthsAgo));
 
     // Group the data nicely by months in reverse
     const groupedCorkData = groupBy(allCorkData, (r) => moment(r.date).format('MMMM'));
@@ -116,8 +106,8 @@ const actions = {
       latestCorkDataDateTime,
     });
 
-    commit('SET_CORK_DATA', { orderedCorkData, allCorkData, pastThreeMonthCorkData });
-    commit('SET_IRISH_DATA', { orderedIrishData, allIrishData, pastThreeMonthIrishData });
+    commit('SET_CORK_DATA', { orderedCorkData, allCorkData });
+    commit('SET_IRISH_DATA', { orderedIrishData, allIrishData });
   },
 };
 

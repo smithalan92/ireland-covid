@@ -31,13 +31,8 @@
         <chart-section
           :force-inital-expand="true"
           :records="allIrishData"
-          title="All Time"/>
-      </div>
-      <div class="ireland__chart">
-        <chart-section
-          :force-inital-expand="false"
-          :records="pastThreeMonthIrishData"
-          title="Past 3 months"/>
+          type="stockChart"
+          title="All time overview"/>
       </div>
       <div
         class="ireland__chart"

@@ -1,3 +1,25 @@
-.chart {
+.vue-highcharts {
     width: 100%;
+
+    .highcharts-range-input {
+        tspan {
+            fill: #fff;
+        }
+    }
+
+    .highcharts-range-label {
+        text {
+            fill: #fff !important;
+        }
+    }
+
+    .highcharts-range-selector-buttons {
+        text {
+            fill: #fff !important;
+        }
+
+        .highcharts-button-box {
+            fill: #2e2e2e;
+        }
+    }
 }

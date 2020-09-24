@@ -19,6 +19,11 @@ export default {
       type: Boolean,
       required: true,
     },
+    type: {
+      type: String,
+      required: false,
+      default: 'chart',
+    },
   },
 
   components: {
@@ -35,11 +40,22 @@ export default {
 
   computed: {
     categories() {
-      return this.records.map((r) => `${moment(r.date).format('Do MMM')}`);
+      if (this.type === 'chart') {
+        return this.records.map((r) => `${moment(r.date).format('Do MMM')}`);
+      }
+
+      return [];
     },
 
     data() {
-      return this.records.map((r) => r.newCases);
+      if (this.type === 'chart') {
+        return this.records.map((r) => r.newCases);
+      }
+
+      return this.records.map((r) => ([
+        new Date(r.date).getTime(),
+        r.newCases,
+      ]));
     },
   },
 
