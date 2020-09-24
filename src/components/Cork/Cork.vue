@@ -33,6 +33,12 @@
           :records="allCorkData"
           title="All Time"/>
       </div>
+      <div class="cork__chart">
+        <chart-section
+          :force-inital-expand="false"
+          :records="pastThreeMonthCorkData"
+          title="Past 3 months"/>
+      </div>
       <div
         class="cork__chart"
         v-for="item in orderedCorkData"

@@ -20,6 +20,7 @@ export default {
       'changeInIrishDeaths',
       'latestIrishDataDateTime',
       'orderedIrishData',
+      'pastThreeMonthIrishData',
     ]),
   },
 };

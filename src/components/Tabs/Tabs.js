@@ -1,23 +1,29 @@
-const TABS = ['cork', 'ireland'];
+import { ref, toRefs, watch } from 'vue';
+import { useRoute } from 'vue-router';
+
+const tabs = ['cork', 'ireland'];
 
 export default {
   name: 'Tabs',
 
-  data() {
-    return {
-      tabs: TABS,
-      selectedTab: TABS[0],
+  setup(props, { emit }) {
+    const { name } = toRefs(useRoute());
+
+    const selectedTab = ref('cork');
+
+    watch(name, (newRoute) => {
+      selectedTab.value = newRoute;
+    });
+
+    const onSelectTab = (tab) => {
+      selectedTab.value = tab;
+      emit('select-tab', tab);
     };
-  },
 
-  methods: {
-    onSelectTab(tab) {
-      this.selectedTab = tab;
-      this.$emit('select-tab', tab);
-    },
-  },
-
-  created() {
-    this.selectedTab = this.$route.name;
+    return {
+      selectedTab,
+      onSelectTab,
+      tabs,
+    };
   },
 };

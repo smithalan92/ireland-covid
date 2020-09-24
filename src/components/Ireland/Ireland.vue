@@ -33,6 +33,12 @@
           :records="allIrishData"
           title="All Time"/>
       </div>
+      <div class="ireland__chart">
+        <chart-section
+          :force-inital-expand="false"
+          :records="pastThreeMonthIrishData"
+          title="Past 3 months"/>
+      </div>
       <div
         class="ireland__chart"
         v-for="item in orderedIrishData"
