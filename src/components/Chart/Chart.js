@@ -15,15 +15,9 @@ export default {
       type: Array,
       required: true,
     },
-    data: {
+    series: {
       type: Array,
       required: true,
-    },
-
-    seriesName: {
-      type: String,
-      required: false,
-      default: '',
     },
 
     type: {
@@ -57,10 +51,7 @@ export default {
           enableMouseTracking: true,
         },
       },
-      series: [{
-        name: props.seriesName,
-        data: props.data,
-      }],
+      series: props.series,
     }));
 
     return () => h(VueHighcharts, {

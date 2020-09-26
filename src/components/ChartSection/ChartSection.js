@@ -47,15 +47,43 @@ export default {
       return [];
     },
 
-    data() {
+    series() {
+      const caseData = [];
+      const deathData = [];
+
       if (this.type === 'chart') {
-        return this.records.map((r) => r.newCases);
+        this.records.forEach((r) => {
+          caseData.push(r.newCases);
+
+          if (r.newDeaths !== undefined) {
+            deathData.push(r.newDeaths);
+          }
+        });
+      } else {
+        this.records.forEach((r) => {
+          const timeStamp = new Date(r.date).getTime();
+
+          caseData.push([timeStamp, r.newCases]);
+
+          if (r.newDeaths !== undefined) {
+            deathData.push([timeStamp, r.newDeaths]);
+          }
+        });
       }
 
-      return this.records.map((r) => ([
-        new Date(r.date).getTime(),
-        r.newCases,
-      ]));
+      const series = [{
+        name: 'Daily new cases',
+        data: caseData,
+      }];
+
+      if (deathData.length) {
+        series.push({
+          name: 'Daily new deaths',
+          data: deathData,
+        });
+      }
+
+      return series;
     },
   },
 

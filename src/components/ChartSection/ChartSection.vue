@@ -19,8 +19,7 @@
         <chart
           :type="type"
           :categories="categories"
-          :data="data"
-          series-name="Daily new cases"/>
+          :series="series"/>
       </div>
     </template>
   </card>
