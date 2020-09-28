@@ -33,6 +33,7 @@ module.exports = {
             'removeComments',
             'removeDoctype',
             { removeViewBox: false },
+            { cleanupIDs: false },
           ],
         },
       });

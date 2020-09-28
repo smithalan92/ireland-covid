@@ -1,7 +1,7 @@
 import { ref, toRefs, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
-const tabs = ['cork', 'ireland'];
+const tabs = ['cork', 'ireland', 'counties'];
 
 export default {
   name: 'Tabs',

@@ -1,0 +1,47 @@
+.county-breakdown {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.county-breakdown__title {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.county-breakdown__subtitle {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.county-breakdown__map {
+  max-height: 700px;
+
+  fill: #fff; // Sets the font colour to white in each path
+
+  g {
+    cursor: pointer;
+  }
+}
+
+.county-breakdown__map-note {
+  margin-top: 24px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.county-breakdown__tooltip {
+  padding: 8px;
+  font-size: 10px;
+  background-color: rgb(37, 37, 37);
+  border-radius: 6px;
+  position: absolute;
+  user-select: none;
+  font-size: 12px;
+}
+
+.county-breakdown__tooltip-county-name {
+  font-weight: 600;
+}

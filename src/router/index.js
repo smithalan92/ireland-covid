@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Cork from '@/components/Cork';
 import Ireland from '@/components/Ireland';
+import CountyBreakdown from '@/components/CountyBreakdown';
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: '/ireland',
     name: 'ireland',
     component: Ireland,
+  },
+  {
+    path: '/counties',
+    name: 'counties',
+    component: CountyBreakdown,
   },
 ];
 

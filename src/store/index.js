@@ -23,6 +23,7 @@ const state = {
   allIrishData: [],
   orderedIrishData: [],
   pastThreeMonthIrishData: [],
+  countyData: {},
 };
 
 const mutations = {
@@ -50,14 +51,17 @@ const mutations = {
     state.orderedIrishData = orderedIrishData;
     state.allIrishData = allIrishData;
   },
+
+  SET_COUNTY_DATA(state, countyData) {
+    state.countyData = countyData;
+  },
 };
 
 const actions = {
   processData({ commit }) {
     const totalIrishCases = util.formatNumber(caseData.totalIrishCases);
     const totalIrishDeaths = util.formatNumber(caseData.totalIrishDeaths);
-    const { changeInIrishCases } = caseData;
-    const { changeInIrishDeaths } = caseData;
+    const { changeInIrishCases, changeInIrishDeaths } = caseData;
     const totalIrishCasesInPast30Days = util.formatNumber(caseData.irishCasesInPast30Days);
     const latestIrishDataDateTime = moment(caseData.latestIrishDataDateTime).format('Do MMMM YYYY');
 
@@ -67,6 +71,8 @@ const actions = {
 
     const allCorkData = caseData.corkData.sort((a, b) => new Date(a.date) - new Date(b.date));
     const allIrishData = caseData.irishData.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    const { countyData } = caseData;
 
     // Group the data nicely by months in reverse
     const groupedCorkData = groupBy(allCorkData, (r) => moment(r.date).format('MMMM'));
@@ -108,6 +114,7 @@ const actions = {
 
     commit('SET_CORK_DATA', { orderedCorkData, allCorkData });
     commit('SET_IRISH_DATA', { orderedIrishData, allIrishData });
+    commit('SET_COUNTY_DATA', countyData);
   },
 };
 

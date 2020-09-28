@@ -13,6 +13,10 @@ a {
     color: rgb(137, 174, 216);
 }
 
+#app {
+    height: 100%;
+}
+
 .app {
     height: 100%;
     display: flex;
@@ -51,6 +55,7 @@ a {
     background: #151515;
     width: 80%;
     margin: 0 auto;
+    flex: 1;
 
     @media only screen and (max-width: 990px) {
         width: 100%;
