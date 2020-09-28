@@ -4,7 +4,7 @@
     "changeInIrishCases": 390,
     "changeInIrishDeaths": 0,
     "irishCasesInPast30Days": 6733,
-    "latestIrishDataDateTime": "2020-09-28T17:15:01.244Z",
+    "latestIrishDataDateTime": "2020-09-28T18:19:09.151Z",
     "latestCorkDataDateTime": "2020-09-26T00:00:00.000Z",
     "totalCasesInCork": 2018,
     "totalCorkCasesInPast30Days": 384,
@@ -1826,5 +1826,33 @@
             "newCases": 390,
             "newDeaths": 0
         }
-    ]
+    ],
+    "countyData": {
+        "dublin": 16608,
+        "kildare": 2541,
+        "cork": 2018,
+        "meath": 1038,
+        "louth": 1027,
+        "cavan": 941,
+        "limerick": 931,
+        "wicklow": 896,
+        "donegal": 873,
+        "tipperary": 774,
+        "westmeath": 767,
+        "offaly": 712,
+        "galway": 702,
+        "mayo": 644,
+        "monaghan": 643,
+        "clare": 558,
+        "kilkenny": 454,
+        "laois": 442,
+        "roscommon": 423,
+        "kerry": 384,
+        "wexford": 374,
+        "longford": 335,
+        "waterford": 330,
+        "carlow": 281,
+        "sligo": 175,
+        "leitrim": 116
+    }
 }
