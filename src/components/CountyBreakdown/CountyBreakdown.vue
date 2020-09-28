@@ -16,7 +16,7 @@
         class="county-breakdown__tooltip"
         v-show="isTooltipVisible"
         :style="{ left: popupLeft, top: popupTop }">
-        <span class="county-breakdown__tooltip-county-name">{{ currentCountyName }}</span>:
+        <div class="county-breakdown__tooltip-county-name">{{ currentCountyName }}</div>
         {{ currentCountyCases }} confirmed cases
       </div>
   </div>
