@@ -32,7 +32,6 @@ a {
     position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 1;
     border-bottom: 3px solid #151515;
 }
@@ -53,7 +52,8 @@ a {
     margin: 0 auto;
     flex: 1;
 
-    @media only screen and (max-width: 990px) {
+    .app--small &,
+    .app--tiny & {
         width: 100%;
         padding: 0 24px;
     }

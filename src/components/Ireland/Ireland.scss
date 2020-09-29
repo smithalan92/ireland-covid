@@ -7,6 +7,16 @@
 .ireland__stats {
     display: flex;
     min-height: 100px;
+    margin-bottom: 12px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .app--tiny & {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
 
 .ireland__stats-card {
@@ -14,6 +24,11 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    .app--tiny & {
+        margin-right: 0;
+        margin-bottom: 12px;
     }
 }
 

@@ -26,6 +26,32 @@
         </template>
       </card>
     </div>
+    <div class="ireland__stats">
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ totalIrishCasesInPast14Days }}
+        </template>
+        <template v-slot:subtitle>
+          confirmed cases in Ireland in past 14 days.
+        </template>
+      </card>
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ totalIrishDeathsInPast30Days }}
+        </template>
+        <template v-slot:subtitle>
+          confirmed deaths in Ireland in past 30 days.
+        </template>
+      </card>
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ totalIrishDeathsInPast14Days }}
+        </template>
+        <template v-slot:subtitle>
+          confirmed deaths in Ireland in past 14 days.
+        </template>
+      </card>
+    </div>
     <div class="ireland__charts">
       <div class="ireland__chart">
         <chart-section

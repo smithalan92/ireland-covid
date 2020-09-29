@@ -1,5 +1,6 @@
 <template>
-  <div class="app">
+  <div
+    :class="appClassesToApply">
     <div class="app__header">
      <div class="app__header-title">Cork confirmed COVID-19 cases</div>
      <tabs

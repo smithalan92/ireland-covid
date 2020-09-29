@@ -25,6 +25,14 @@
           confirmed cases in Cork in past 30 days.
         </template>
       </card>
+      <card class="cork__stats-card">
+        <template v-slot:title>
+          {{ totalCorkCasesInPast14Days }}
+        </template>
+        <template v-slot:subtitle>
+          confirmed cases in Cork in past 14 days.
+        </template>
+      </card>
     </div>
     <div class="cork__charts">
       <div class="cork__chart">

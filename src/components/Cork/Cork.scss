@@ -7,6 +7,11 @@
 .cork__stats {
     display: flex;
     min-height: 100px;
+
+    .app--tiny &,
+    .app--small &  {
+        flex-direction: column;
+    }
 }
 
 .cork__stats-card {
@@ -14,6 +19,12 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    .app--tiny &,
+    .app--small & {
+        margin-right: 0;
+        margin-bottom: 12px;
     }
 }
 

@@ -15,6 +15,7 @@ export default {
       'allCorkData',
       'totalCorkCases',
       'totalCorkCasesInPast30Days',
+      'totalCorkCasesInPast14Days',
       'latestCorkDataDateTime',
       'orderedCorkData',
     ]),
