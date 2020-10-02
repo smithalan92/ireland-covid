@@ -1,17 +1,17 @@
 {
-    "totalIrishCases": 36597,
-    "totalIrishDeaths": 1806,
-    "changeInIrishCases": 442,
-    "changeInIrishDeaths": 4,
-    "irishCasesInPast30Days": 7655,
-    "irishCasesInPast14Days": 4631,
+    "totalIrishCases": 37063,
+    "totalIrishDeaths": 1801,
+    "changeInIrishCases": 470,
+    "changeInIrishDeaths": 1,
+    "irishCasesInPast30Days": 8036,
+    "irishCasesInPast14Days": 4848,
     "irishDeathsInPast30Days": 35,
-    "irishDeathsInPast14Days": 19,
-    "latestIrishDataDateTime": "2020-10-01T17:15:01.328Z",
-    "latestCorkDataDateTime": "2020-09-29T00:00:00.000Z",
-    "totalCasesInCork": 2145,
-    "totalCorkCasesInPast30Days": 506,
-    "totalCorkCasesInPast14Days": 441,
+    "irishDeathsInPast14Days": 17,
+    "latestIrishDataDateTime": "2020-10-02T17:15:00.650Z",
+    "latestCorkDataDateTime": "2020-09-30T00:00:00.000Z",
+    "totalCasesInCork": 2192,
+    "totalCorkCasesInPast30Days": 551,
+    "totalCorkCasesInPast14Days": 480,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -784,6 +784,10 @@
         {
             "date": "2020-09-29T00:00:00.000Z",
             "newCases": 60
+        },
+        {
+            "date": "2020-09-30T00:00:00.000Z",
+            "newCases": 47
         }
     ],
     "irishData": [
@@ -1856,34 +1860,39 @@
             "date": "2020-10-01T00:00:00.000Z",
             "newCases": 442,
             "newDeaths": 4
+        },
+        {
+            "date": "2020-10-02T00:00:00.000Z",
+            "newCases": 470,
+            "newDeaths": 1
         }
     ],
     "countyData": {
-        "dublin": 17149,
-        "kildare": 2585,
-        "cork": 2145,
-        "meath": 1062,
-        "louth": 1042,
-        "limerick": 958,
-        "cavan": 953,
-        "donegal": 949,
-        "wicklow": 927,
-        "tipperary": 788,
-        "westmeath": 778,
-        "galway": 765,
-        "offaly": 726,
-        "monaghan": 672,
-        "mayo": 648,
-        "clare": 583,
-        "kilkenny": 459,
-        "laois": 453,
-        "roscommon": 449,
-        "wexford": 399,
-        "kerry": 391,
-        "longford": 352,
-        "waterford": 340,
-        "carlow": 286,
-        "sligo": 180,
-        "leitrim": 116
+        "dublin": 17315,
+        "kildare": 2594,
+        "cork": 2192,
+        "meath": 1085,
+        "louth": 1046,
+        "donegal": 977,
+        "limerick": 964,
+        "cavan": 963,
+        "wicklow": 934,
+        "tipperary": 799,
+        "galway": 786,
+        "westmeath": 782,
+        "offaly": 730,
+        "monaghan": 693,
+        "mayo": 650,
+        "clare": 600,
+        "laois": 464,
+        "kilkenny": 463,
+        "roscommon": 461,
+        "wexford": 404,
+        "kerry": 393,
+        "longford": 363,
+        "waterford": 344,
+        "carlow": 291,
+        "sligo": 182,
+        "leitrim": 118
     }
 }
