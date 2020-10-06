@@ -7,11 +7,11 @@
     "irishCasesInPast14Days": 5583,
     "irishDeathsInPast30Days": 46,
     "irishDeathsInPast14Days": 28,
-    "latestIrishDataDateTime": "2020-10-06T17:30:00.614Z",
-    "latestCorkDataDateTime": "2020-09-04T00:00:00.000Z",
-    "totalCasesInCork": 1655,
-    "totalCorkCasesInPast30Days": 80,
-    "totalCorkCasesInPast14Days": 43,
+    "latestIrishDataDateTime": "2020-10-06T17:33:47.813Z",
+    "latestCorkDataDateTime": "2020-10-04T00:00:00.000Z",
+    "totalCasesInCork": 2403,
+    "totalCorkCasesInPast30Days": 748,
+    "totalCorkCasesInPast14Days": 596,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -684,6 +684,126 @@
         {
             "date": "2020-09-04T00:00:00.000Z",
             "newCases": 6
+        },
+        {
+            "date": "2020-09-05T00:00:00.000Z",
+            "newCases": 5
+        },
+        {
+            "date": "2020-09-06T00:00:00.000Z",
+            "newCases": 2
+        },
+        {
+            "date": "2020-09-07T00:00:00.000Z",
+            "newCases": 3
+        },
+        {
+            "date": "2020-09-08T00:00:00.000Z",
+            "newCases": 2
+        },
+        {
+            "date": "2020-09-09T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2020-09-10T00:00:00.000Z",
+            "newCases": 8
+        },
+        {
+            "date": "2020-09-11T00:00:00.000Z",
+            "newCases": 6
+        },
+        {
+            "date": "2020-09-12T00:00:00.000Z",
+            "newCases": 2
+        },
+        {
+            "date": "2020-09-13T00:00:00.000Z",
+            "newCases": 5
+        },
+        {
+            "date": "2020-09-14T00:00:00.000Z",
+            "newCases": 9
+        },
+        {
+            "date": "2020-09-15T00:00:00.000Z",
+            "newCases": 7
+        },
+        {
+            "date": "2020-09-16T00:00:00.000Z",
+            "newCases": 8
+        },
+        {
+            "date": "2020-09-17T00:00:00.000Z",
+            "newCases": 14
+        },
+        {
+            "date": "2020-09-18T00:00:00.000Z",
+            "newCases": 21
+        },
+        {
+            "date": "2020-09-19T00:00:00.000Z",
+            "newCases": 36
+        },
+        {
+            "date": "2020-09-20T00:00:00.000Z",
+            "newCases": 24
+        },
+        {
+            "date": "2020-09-21T00:00:00.000Z",
+            "newCases": 34
+        },
+        {
+            "date": "2020-09-22T00:00:00.000Z",
+            "newCases": 21
+        },
+        {
+            "date": "2020-09-23T00:00:00.000Z",
+            "newCases": 34
+        },
+        {
+            "date": "2020-09-24T00:00:00.000Z",
+            "newCases": 32
+        },
+        {
+            "date": "2020-09-25T00:00:00.000Z",
+            "newCases": 36
+        },
+        {
+            "date": "2020-09-26T00:00:00.000Z",
+            "newCases": 54
+        },
+        {
+            "date": "2020-09-27T00:00:00.000Z",
+            "newCases": 27
+        },
+        {
+            "date": "2020-09-28T00:00:00.000Z",
+            "newCases": 40
+        },
+        {
+            "date": "2020-09-29T00:00:00.000Z",
+            "newCases": 60
+        },
+        {
+            "date": "2020-09-30T00:00:00.000Z",
+            "newCases": 47
+        },
+        {
+            "date": "2020-10-01T00:00:00.000Z",
+            "newCases": 61
+        },
+        {
+            "date": "2020-10-02T00:00:00.000Z",
+            "newCases": 46
+        },
+        {
+            "date": "2020-10-03T00:00:00.000Z",
+            "newCases": 55
+        },
+        {
+            "date": "2020-10-04T00:00:00.000Z",
+            "newCases": 49
         }
     ],
     "irishData": [
@@ -1783,5 +1903,32 @@
             "newDeaths": 1
         }
     ],
-    "countyData": {}
+    "countyData": {
+        "dublin": 17951,
+        "kildare": 2678,
+        "cork": 2403,
+        "meath": 1149,
+        "donegal": 1135,
+        "louth": 1088,
+        "limerick": 1080,
+        "cavan": 1006,
+        "wicklow": 974,
+        "galway": 859,
+        "tipperary": 836,
+        "westmeath": 802,
+        "offaly": 772,
+        "monaghan": 730,
+        "clare": 675,
+        "mayo": 670,
+        "laois": 508,
+        "roscommon": 494,
+        "kilkenny": 484,
+        "kerry": 445,
+        "wexford": 432,
+        "longford": 383,
+        "waterford": 353,
+        "carlow": 301,
+        "sligo": 211,
+        "leitrim": 122
+    }
 }
