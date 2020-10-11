@@ -43,9 +43,51 @@
   user-select: none;
   font-size: 12px;
   border: 1px solid rgb(185, 185, 185);
+  line-height: 1.5;
 }
 
 .county-breakdown__tooltip-county-name {
   font-weight: 600;
   margin-bottom: 4px;
+}
+
+.county-breakdown__color-chart {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.county-breakdown__color-chart-row {
+  display: flex;
+  text-align: center;
+  flex: 1;
+  margin-top: 12px;
+}
+
+.county-breakdown__color-chart-color {
+  height: 20px;
+  flex: 1;
+}
+
+.county-breakdown__color-chart-color-description {
+  flex: 1;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.county-breakdown__color-chart-low {
+  background: #016118;
+}
+
+.county-breakdown__color-chart-medium {
+  background: #8e5506;
+}
+
+.county-breakdown__color-chart-high {
+  background: #bf3100;
+}
+
+.county-breakdown__color-chart-very-high {
+  background: #2d044a;
 }
