@@ -34,6 +34,7 @@ module.exports = {
             'removeDoctype',
             { removeViewBox: false },
             { cleanupIDs: false },
+            { collapseGroups: false }, // needed for map svg CSS targeting
           ],
         },
       });

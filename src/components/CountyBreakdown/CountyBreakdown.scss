@@ -1,3 +1,28 @@
+$county-level-low-colour: #016118;
+$county-level-medium-colour: #b2b840;
+$county-level-high-colour: #b67514;
+$county-level-very-high-colour: #760606;
+
+@mixin svg-county-styling ($background-colour) {
+  path {
+    fill: $background-colour;
+
+    &:hover {
+      fill: rgba($background-colour, 0.7);
+    }
+  }
+
+  g {
+    path {
+      fill: #fff;
+
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
+}
+
 .county-breakdown {
     display: flex;
     flex-direction: column;
@@ -77,17 +102,33 @@
 }
 
 .county-breakdown__color-chart-low {
-  background: #016118;
+  background: $county-level-low-colour;
 }
 
 .county-breakdown__color-chart-medium {
-  background: #8e5506;
+  background: $county-level-medium-colour;
 }
 
 .county-breakdown__color-chart-high {
-  background: #bf3100;
+  background: $county-level-high-colour;
 }
 
 .county-breakdown__color-chart-very-high {
-  background: #2d044a;
+  background: $county-level-very-high-colour;
+}
+
+.county--low-cases {
+  @include svg-county-styling($county-level-low-colour);
+}
+
+.county--medium-cases {
+  @include svg-county-styling($county-level-medium-colour);
+}
+
+.county--high-cases {
+  @include svg-county-styling($county-level-high-colour);
+}
+
+.county--very-high-cases {
+  @include svg-county-styling($county-level-very-high-colour);
 }
