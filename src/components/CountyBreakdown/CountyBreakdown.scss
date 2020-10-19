@@ -4,21 +4,19 @@ $county-level-high-colour: #b67514;
 $county-level-very-high-colour: #760606;
 
 @mixin svg-county-styling ($background-colour) {
-  path {
-    fill: $background-colour;
+  cursor: pointer;
 
-    &:hover {
-      fill: rgba($background-colour, 0.7);
-    }
+  path[id] {
+    fill: $background-colour;
   }
 
-  g {
-    path {
-      fill: #fff;
+  path:not([id]) {
+    fill: white;
+  }
 
-      &:hover {
-        fill: #fff;
-      }
+  &:hover {
+    path[id] {
+      fill: rgba($background-colour, 0.7);
     }
   }
 }
@@ -44,10 +42,16 @@ $county-level-very-high-colour: #760606;
 .county-breakdown__map {
   max-height: 700px;
 
-  fill: #fff; // Sets the font colour to white in each path
+  #g-ni {
+    cursor: not-allowed;
 
-  g {
-    cursor: pointer;
+    path:not([id]) {
+      fill: #fff;
+    }
+
+    path[id] {
+      fill: rgb(114, 114, 114);
+    }
   }
 }
 

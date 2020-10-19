@@ -3,6 +3,9 @@ const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
 module.exports = {
   outputDir: 'docs',
+  devServer: {
+    open: true,
+  },
   chainWebpack: (config) => {
     config.resolve.alias
       .set('@', path.join(__dirname, 'src'));
@@ -34,7 +37,7 @@ module.exports = {
             'removeDoctype',
             { removeViewBox: false },
             { cleanupIDs: false },
-            { collapseGroups: false }, // needed for map svg CSS targeting
+            // { collapseGroups: false }, // needed for map svg CSS targeting
           ],
         },
       });

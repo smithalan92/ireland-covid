@@ -51,17 +51,10 @@ export default {
       }
 
       // Quick sort of parent node children to arrange the text path and boundary correctly
-      let [textEl, boundaryEl] = Array.from(e.target.parentNode.children).sort((a) => {
+      const [textEl, boundaryEl] = Array.from(e.target.parentNode.children).sort((a) => {
         if (a.id) return 1;
         return -1;
       });
-
-      if (!boundaryEl || !boundaryEl.id) {
-        [textEl, boundaryEl] = Array.from(e.target.parentNode.parentElement.children).sort((a) => {
-          if (a.id) return 1;
-          return -1;
-        });
-      }
 
       // If were hovering over Northern Ireland, hide the tooltip
       // We dont have data for NI
@@ -82,22 +75,18 @@ export default {
       this.currentHoverBoundaryName = this.currentCountyName.toLowerCase();
 
       // Set the tooltips new position, somewhere centerish of the path outline
-      const iconPos = textEl.getBoundingClientRect();
-      this.popupLeft = `${iconPos.right + 15}px`;
-      this.popupTop = `${iconPos.top + (iconPos.height / 2) - 10}px`;
+      const textPos = textEl.getBoundingClientRect();
+      console.log(textPos);
+      this.popupLeft = `${textPos.right + 30}px`;
+      this.popupTop = `${(textPos.top + window.scrollY) + (textPos.height / 2) - 40}px`;
 
       this.isTooltipVisible = true;
     },
   },
 
   mounted() {
-    const niEl = document.getElementById('g-ni');
-    niEl.getElementsByTagName('path')[0].style.fill = '#484848';
-    niEl.getElementsByTagName('g')[0].style.cursor = 'not-allowed';
-    niEl.style.cursor = 'not-allowed';
-
     Object.keys(this.countyData).forEach((county) => {
-      let result = 'l';
+      let result = 'low';
 
       const { incidenceRate14Days } = this.countyData[county];
 
