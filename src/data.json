@@ -1,17 +1,17 @@
 {
-    "totalIrishCases": 62002,
-    "totalIrishDeaths": 1915,
-    "changeInIrishCases": 552,
+    "totalIrishCases": 62750,
+    "totalIrishDeaths": 1917,
+    "changeInIrishCases": 767,
     "changeInIrishDeaths": 2,
-    "irishCasesInPast30Days": 25116,
-    "irishCasesInPast14Days": 12134,
-    "irishDeathsInPast30Days": 116,
-    "irishDeathsInPast14Days": 63,
-    "latestIrishDataDateTime": "2020-11-02T18:00:02.552Z",
-    "latestCorkDataDateTime": "2020-10-30T00:00:00.000Z",
-    "totalCasesInCork": 5413,
-    "totalCorkCasesInPast30Days": 1873,
-    "totalCorkCasesInPast14Days": 798,
+    "irishCasesInPast30Days": 25270,
+    "irishCasesInPast14Days": 11870,
+    "irishDeathsInPast30Days": 108,
+    "irishDeathsInPast14Days": 65,
+    "latestIrishDataDateTime": "2020-11-02T21:47:03.076Z",
+    "latestCorkDataDateTime": "2020-10-31T00:00:00.000Z",
+    "totalCasesInCork": 5499,
+    "totalCorkCasesInPast30Days": 3246,
+    "totalCorkCasesInPast14Days": 1654,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -570,22 +570,10 @@
             "newCases": 0
         },
         {
-            "date": "2020-08-06T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-07T00:00:00.000Z",
             "newCases": 7
         },
         {
-            "date": "2020-08-07T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2020-08-08T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-08T00:00:00.000Z",
             "newCases": 0
         },
@@ -594,20 +582,8 @@
             "newCases": 3
         },
         {
-            "date": "2020-08-09T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-10T00:00:00.000Z",
             "newCases": 2
-        },
-        {
-            "date": "2020-08-10T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2020-08-11T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-08-11T00:00:00.000Z",
@@ -618,35 +594,15 @@
             "newCases": 2
         },
         {
-            "date": "2020-08-12T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-13T00:00:00.000Z",
             "newCases": 3
-        },
-        {
-            "date": "2020-08-13T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-08-14T00:00:00.000Z",
             "newCases": 3
         },
         {
-            "date": "2020-08-14T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-15T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2020-08-15T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2020-08-16T00:00:00.000Z",
             "newCases": 0
         },
         {
@@ -658,14 +614,6 @@
             "newCases": 3
         },
         {
-            "date": "2020-08-17T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2020-08-18T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-18T00:00:00.000Z",
             "newCases": 0
         },
@@ -674,84 +622,40 @@
             "newCases": 6
         },
         {
-            "date": "2020-08-19T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-20T00:00:00.000Z",
             "newCases": 6
         },
         {
-            "date": "2020-08-20T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-21T00:00:00.000Z",
             "newCases": 2
-        },
-        {
-            "date": "2020-08-21T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-08-22T00:00:00.000Z",
             "newCases": 2
         },
         {
-            "date": "2020-08-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-23T00:00:00.000Z",
             "newCases": 3
         },
         {
-            "date": "2020-08-23T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-24T00:00:00.000Z",
             "newCases": 3
-        },
-        {
-            "date": "2020-08-24T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-08-25T00:00:00.000Z",
             "newCases": 9
         },
         {
-            "date": "2020-08-25T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-26T00:00:00.000Z",
             "newCases": 4
-        },
-        {
-            "date": "2020-08-26T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-08-27T00:00:00.000Z",
             "newCases": 1
         },
         {
-            "date": "2020-08-27T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-28T00:00:00.000Z",
             "newCases": 4
-        },
-        {
-            "date": "2020-08-28T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2020-08-29T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-08-29T00:00:00.000Z",
@@ -762,84 +666,40 @@
             "newCases": 1
         },
         {
-            "date": "2020-08-30T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-08-31T00:00:00.000Z",
             "newCases": 2
-        },
-        {
-            "date": "2020-08-31T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-01T00:00:00.000Z",
             "newCases": 2
         },
         {
-            "date": "2020-09-01T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-02T00:00:00.000Z",
             "newCases": 2
-        },
-        {
-            "date": "2020-09-02T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-03T00:00:00.000Z",
             "newCases": 4
-        },
-        {
-            "date": "2020-09-03T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-04T00:00:00.000Z",
             "newCases": 6
         },
         {
-            "date": "2020-09-04T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-05T00:00:00.000Z",
             "newCases": 5
         },
         {
-            "date": "2020-09-05T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-06T00:00:00.000Z",
             "newCases": 2
-        },
-        {
-            "date": "2020-09-06T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-07T00:00:00.000Z",
             "newCases": 3
         },
         {
-            "date": "2020-09-07T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-08T00:00:00.000Z",
             "newCases": 2
-        },
-        {
-            "date": "2020-09-08T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2020-09-09T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-09T00:00:00.000Z",
@@ -850,408 +710,208 @@
             "newCases": 8
         },
         {
-            "date": "2020-09-10T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-11T00:00:00.000Z",
             "newCases": 6
-        },
-        {
-            "date": "2020-09-11T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-12T00:00:00.000Z",
             "newCases": 2
         },
         {
-            "date": "2020-09-12T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-13T00:00:00.000Z",
             "newCases": 5
         },
         {
-            "date": "2020-09-13T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-14T00:00:00.000Z",
             "newCases": 9
-        },
-        {
-            "date": "2020-09-14T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-15T00:00:00.000Z",
             "newCases": 7
         },
         {
-            "date": "2020-09-15T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-16T00:00:00.000Z",
             "newCases": 8
-        },
-        {
-            "date": "2020-09-16T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-17T00:00:00.000Z",
             "newCases": 14
         },
         {
-            "date": "2020-09-17T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-18T00:00:00.000Z",
             "newCases": 21
         },
         {
-            "date": "2020-09-18T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-19T00:00:00.000Z",
             "newCases": 36
-        },
-        {
-            "date": "2020-09-19T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-20T00:00:00.000Z",
             "newCases": 24
         },
         {
-            "date": "2020-09-20T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-21T00:00:00.000Z",
             "newCases": 34
-        },
-        {
-            "date": "2020-09-21T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-22T00:00:00.000Z",
             "newCases": 21
         },
         {
-            "date": "2020-09-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-23T00:00:00.000Z",
             "newCases": 34
-        },
-        {
-            "date": "2020-09-23T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-24T00:00:00.000Z",
             "newCases": 32
         },
         {
-            "date": "2020-09-24T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-25T00:00:00.000Z",
             "newCases": 36
-        },
-        {
-            "date": "2020-09-25T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-26T00:00:00.000Z",
             "newCases": 54
         },
         {
-            "date": "2020-09-26T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-27T00:00:00.000Z",
             "newCases": 27
         },
         {
-            "date": "2020-09-27T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-28T00:00:00.000Z",
             "newCases": 40
-        },
-        {
-            "date": "2020-09-28T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-09-29T00:00:00.000Z",
             "newCases": 60
         },
         {
-            "date": "2020-09-29T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-09-30T00:00:00.000Z",
             "newCases": 47
-        },
-        {
-            "date": "2020-09-30T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-01T00:00:00.000Z",
             "newCases": 61
         },
         {
-            "date": "2020-10-01T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-02T00:00:00.000Z",
             "newCases": 46
-        },
-        {
-            "date": "2020-10-02T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-03T00:00:00.000Z",
             "newCases": 55
         },
         {
-            "date": "2020-10-03T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-04T00:00:00.000Z",
             "newCases": 49
-        },
-        {
-            "date": "2020-10-04T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-05T00:00:00.000Z",
             "newCases": 41
         },
         {
-            "date": "2020-10-05T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-06T00:00:00.000Z",
             "newCases": 63
         },
         {
-            "date": "2020-10-06T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-07T00:00:00.000Z",
             "newCases": 76
-        },
-        {
-            "date": "2020-10-07T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-08T00:00:00.000Z",
             "newCases": 107
         },
         {
-            "date": "2020-10-08T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-09T00:00:00.000Z",
             "newCases": 113
-        },
-        {
-            "date": "2020-10-09T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-10T00:00:00.000Z",
             "newCases": 76
         },
         {
-            "date": "2020-10-10T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-11T00:00:00.000Z",
             "newCases": 147
-        },
-        {
-            "date": "2020-10-11T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-12T00:00:00.000Z",
             "newCases": 138
         },
         {
-            "date": "2020-10-12T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-13T00:00:00.000Z",
             "newCases": 116
-        },
-        {
-            "date": "2020-10-13T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-14T00:00:00.000Z",
             "newCases": 173
         },
         {
-            "date": "2020-10-14T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-15T00:00:00.000Z",
             "newCases": 87
-        },
-        {
-            "date": "2020-10-15T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-16T00:00:00.000Z",
             "newCases": 149
         },
         {
-            "date": "2020-10-16T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-17T00:00:00.000Z",
             "newCases": 156
-        },
-        {
-            "date": "2020-10-17T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-18T00:00:00.000Z",
             "newCases": 231
         },
         {
-            "date": "2020-10-18T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-19T00:00:00.000Z",
             "newCases": 116
-        },
-        {
-            "date": "2020-10-19T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-20T00:00:00.000Z",
             "newCases": 137
         },
         {
-            "date": "2020-10-20T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-21T00:00:00.000Z",
             "newCases": 98
-        },
-        {
-            "date": "2020-10-21T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-22T00:00:00.000Z",
             "newCases": 40
         },
         {
-            "date": "2020-10-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-23T00:00:00.000Z",
             "newCases": 148
-        },
-        {
-            "date": "2020-10-23T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-24T00:00:00.000Z",
             "newCases": 147
         },
         {
-            "date": "2020-10-24T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-25T00:00:00.000Z",
             "newCases": 96
-        },
-        {
-            "date": "2020-10-25T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-26T00:00:00.000Z",
             "newCases": 125
         },
         {
-            "date": "2020-10-26T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-27T00:00:00.000Z",
             "newCases": 103
-        },
-        {
-            "date": "2020-10-27T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-28T00:00:00.000Z",
             "newCases": 162
         },
         {
-            "date": "2020-10-28T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
             "date": "2020-10-29T00:00:00.000Z",
             "newCases": 103
-        },
-        {
-            "date": "2020-10-29T00:00:00.000Z",
-            "newCases": 0
         },
         {
             "date": "2020-10-30T00:00:00.000Z",
             "newCases": 62
         },
         {
-            "date": "2020-10-30T00:00:00.000Z",
-            "newCases": 0
+            "date": "2020-10-31T00:00:00.000Z",
+            "newCases": 86
         }
     ],
     "irishData": [
@@ -2479,138 +2139,143 @@
             "date": "2020-11-01T00:00:00.000Z",
             "newCases": 552,
             "newDeaths": 2
+        },
+        {
+            "date": "2020-11-02T00:00:00.000Z",
+            "newCases": 767,
+            "newDeaths": 2
         }
     ],
     "countyData": {
         "carlow": {
-            "totalCases": 535,
-            "totalCases14Days": 69,
-            "incidenceRate14Days": 121
+            "totalCases": 539,
+            "totalCases14Days": 154,
+            "incidenceRate14Days": 270
         },
         "cavan": {
-            "totalCases": 2050,
-            "totalCases14Days": 138,
-            "incidenceRate14Days": 181
+            "totalCases": 2052,
+            "totalCases14Days": 449,
+            "incidenceRate14Days": 589
         },
         "clare": {
-            "totalCases": 1287,
-            "totalCases14Days": 126,
-            "incidenceRate14Days": 106
+            "totalCases": 1302,
+            "totalCases14Days": 272,
+            "incidenceRate14Days": 229
         },
         "cork": {
-            "totalCases": 5413,
-            "totalCases14Days": 798,
-            "incidenceRate14Days": 147
+            "totalCases": 5499,
+            "totalCases14Days": 1654,
+            "incidenceRate14Days": 305
         },
         "donegal": {
-            "totalCases": 2130,
-            "totalCases14Days": 248,
-            "incidenceRate14Days": 156
+            "totalCases": 2159,
+            "totalCases14Days": 510,
+            "incidenceRate14Days": 320
         },
         "dublin": {
-            "totalCases": 23622,
-            "totalCases14Days": 1484,
-            "incidenceRate14Days": 110
+            "totalCases": 23790,
+            "totalCases14Days": 2958,
+            "incidenceRate14Days": 220
         },
         "galway": {
-            "totalCases": 2300,
-            "totalCases14Days": 319,
-            "incidenceRate14Days": 124
+            "totalCases": 2307,
+            "totalCases14Days": 765,
+            "incidenceRate14Days": 296
         },
         "kerry": {
-            "totalCases": 1066,
-            "totalCases14Days": 131,
-            "incidenceRate14Days": 89
+            "totalCases": 1078,
+            "totalCases14Days": 325,
+            "incidenceRate14Days": 220
         },
         "kildare": {
-            "totalCases": 3721,
-            "totalCases14Days": 241,
-            "incidenceRate14Days": 108
+            "totalCases": 3745,
+            "totalCases14Days": 538,
+            "incidenceRate14Days": 242
         },
         "kilkenny": {
-            "totalCases": 750,
-            "totalCases14Days": 58,
-            "incidenceRate14Days": 58
+            "totalCases": 758,
+            "totalCases14Days": 130,
+            "incidenceRate14Days": 131
         },
         "laois": {
-            "totalCases": 813,
-            "totalCases14Days": 80,
-            "incidenceRate14Days": 94
+            "totalCases": 820,
+            "totalCases14Days": 176,
+            "incidenceRate14Days": 208
         },
         "leitrim": {
-            "totalCases": 228,
-            "totalCases14Days": 4,
-            "incidenceRate14Days": 12
+            "totalCases": 229,
+            "totalCases14Days": 35,
+            "incidenceRate14Days": 109
         },
         "limerick": {
-            "totalCases": 2003,
-            "totalCases14Days": 234,
-            "incidenceRate14Days": 120
+            "totalCases": 2042,
+            "totalCases14Days": 524,
+            "incidenceRate14Days": 269
         },
         "longford": {
-            "totalCases": 568,
-            "totalCases14Days": 42,
-            "incidenceRate14Days": 103
+            "totalCases": 575,
+            "totalCases14Days": 100,
+            "incidenceRate14Days": 245
         },
         "louth": {
-            "totalCases": 1672,
-            "totalCases14Days": 161,
-            "incidenceRate14Days": 125
+            "totalCases": 1695,
+            "totalCases14Days": 383,
+            "incidenceRate14Days": 297
         },
         "mayo": {
-            "totalCases": 1172,
-            "totalCases14Days": 135,
-            "incidenceRate14Days": 103
+            "totalCases": 1182,
+            "totalCases14Days": 321,
+            "incidenceRate14Days": 246
         },
         "meath": {
-            "totalCases": 2929,
-            "totalCases14Days": 320,
-            "incidenceRate14Days": 164
+            "totalCases": 2948,
+            "totalCases14Days": 877,
+            "incidenceRate14Days": 450
         },
         "monaghan": {
-            "totalCases": 1110,
-            "totalCases14Days": 60,
-            "incidenceRate14Days": 98
+            "totalCases": 1118,
+            "totalCases14Days": 177,
+            "incidenceRate14Days": 288
         },
         "offaly": {
-            "totalCases": 1035,
-            "totalCases14Days": 57,
-            "incidenceRate14Days": 73
+            "totalCases": 1037,
+            "totalCases14Days": 126,
+            "incidenceRate14Days": 162
         },
         "roscommon": {
-            "totalCases": 755,
-            "totalCases14Days": 48,
-            "incidenceRate14Days": 74
+            "totalCases": 765,
+            "totalCases14Days": 131,
+            "incidenceRate14Days": 203
         },
         "sligo": {
-            "totalCases": 621,
-            "totalCases14Days": 84,
-            "incidenceRate14Days": 128
+            "totalCases": 630,
+            "totalCases14Days": 233,
+            "incidenceRate14Days": 356
         },
         "tipperary": {
-            "totalCases": 1185,
-            "totalCases14Days": 112,
-            "incidenceRate14Days": 70
+            "totalCases": 1208,
+            "totalCases14Days": 209,
+            "incidenceRate14Days": 131
         },
         "waterford": {
-            "totalCases": 738,
-            "totalCases14Days": 118,
-            "incidenceRate14Days": 102
+            "totalCases": 739,
+            "totalCases14Days": 234,
+            "incidenceRate14Days": 201
         },
         "westmeath": {
-            "totalCases": 1374,
-            "totalCases14Days": 113,
-            "incidenceRate14Days": 127
+            "totalCases": 1385,
+            "totalCases14Days": 326,
+            "incidenceRate14Days": 367
         },
         "wexford": {
-            "totalCases": 1081,
-            "totalCases14Days": 86,
-            "incidenceRate14Days": 57
+            "totalCases": 1089,
+            "totalCases14Days": 261,
+            "incidenceRate14Days": 174
         },
         "wicklow": {
-            "totalCases": 1292,
-            "totalCases14Days": 81,
-            "incidenceRate14Days": 57
+            "totalCases": 1305,
+            "totalCases14Days": 166,
+            "incidenceRate14Days": 117
         }
     }
 }
