@@ -5,8 +5,6 @@ import { groupBy } from 'lodash';
 import caseData from '@/data.json';
 import util from '@/util';
 
-const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 const state = {
   totalIrishCases: 0,
   totalIrishDeaths: 0,
@@ -87,28 +85,47 @@ const actions = {
 
     const { countyData } = caseData;
 
-    // Group the data nicely by months in reverse
-    const groupedCorkData = groupBy(allCorkData, (r) => moment(r.date).format('MMMM'));
+    // Group the data by year
+    const groupedCorkDataByYear = groupBy(allCorkData, (r) => new Date(r.date).getFullYear());
     const orderedCorkData = [];
+    // Then group the data by month within each year
+    Object.keys(groupedCorkDataByYear).forEach((yr) => {
+      groupedCorkDataByYear[yr] = groupBy(groupedCorkDataByYear[yr], (r) => new Date(r.date).getMonth());
+    });
 
-    const groupedIrishData = groupBy(allIrishData, (r) => moment(r.date).format('MMMM'));
+    // Group the data by year
+    const groupedIrishDataByYear = groupBy(allIrishData, (r) => new Date(r.date).getFullYear());
     const orderedIrishData = [];
 
-    MONTHS.reverse().forEach((month) => {
-      if (groupedCorkData[month]) {
-        orderedCorkData.push({
-          month,
-          data: groupedCorkData[month].sort((a, b) => new Date(a) - new Date(b)),
-        });
-      }
-
-      if (groupedIrishData[month]) {
-        orderedIrishData.push({
-          month,
-          data: groupedIrishData[month].sort((a, b) => new Date(a) - new Date(b)),
-        });
-      }
+    // Then group the data by month within each year
+    Object.keys(groupedIrishDataByYear).forEach((yr) => {
+      groupedIrishDataByYear[yr] = groupBy(groupedIrishDataByYear[yr], (r) => new Date(r.date).getMonth());
     });
+
+    // Now we go over all the data ( by year, then month), and process it into a structure that can be consumed by the view
+    [
+      { data: groupedIrishDataByYear, orderedArray: orderedIrishData },
+      { data: groupedCorkDataByYear, orderedArray: orderedCorkData },
+    ]
+      .forEach(({ orderedArray, data }) => {
+        Object.keys(data)
+          .sort((a, b) => b - a) // This will sort the year in DESC order, as each key is the 0 based month num
+          .forEach((year) => {
+            const monthlyCaseData = data[year];
+
+            Object.keys(monthlyCaseData)
+              .sort((a, b) => b - a) // This will sort the month in DESC order, each key is the 0 based month num
+              .forEach((month) => {
+                // MMMM - YYYY will be the format
+                const monthName = new Date(monthlyCaseData[month][0].date).toLocaleString('default', { month: 'long', year: 'numeric' });
+
+                orderedArray.push({
+                  month: monthName,
+                  data: monthlyCaseData[month].sort((a, b) => new Date(a.date) - new Date(b.date)),
+                });
+              });
+          });
+      });
 
     commit('SET_IRISH_TOTALS', {
       totalIrishCases,
