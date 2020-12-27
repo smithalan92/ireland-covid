@@ -6,6 +6,7 @@ import caseData from '@/data.json';
 import util from '@/util';
 
 const state = {
+  lastDataUpdateDateTime: '',
   totalIrishCases: 0,
   totalIrishDeaths: 0,
   totalIrishCasesInPast30Days: 0,
@@ -14,11 +15,11 @@ const state = {
   totalIrishDeathsInPast14Days: 0,
   changeInIrishCases: 0,
   changeInIrishDeaths: 0,
-  latestIrishDataDateTime: 0,
+  latestIrishDataDateTime: '',
   totalCorkCases: 0,
   totalCorkCasesInPast30Days: 0,
   totalCorkCasesInPast14Days: 0,
-  latestCorkDataDateTime: 0,
+  latestCorkDataDateTime: '',
   allCorkData: [],
   orderedCorkData: [],
   pastThreeMonthCorkData: [],
@@ -29,6 +30,10 @@ const state = {
 };
 
 const mutations = {
+  SET_LAST_UPDATED_DATE(state, lastDataUpdateDateTime) {
+    state.lastDataUpdateDateTime = lastDataUpdateDateTime;
+  },
+
   SET_IRISH_TOTALS(state, data) {
     state.totalIrishCases = data.totalIrishCases;
     state.totalIrishDeaths = data.totalIrishDeaths;
@@ -73,6 +78,7 @@ const actions = {
     const totalIrishDeathsInPast30Days = util.formatNumber(caseData.irishDeathsInPast30Days);
     const totalIrishDeathsInPast14Days = util.formatNumber(caseData.irishDeathsInPast14Days);
 
+    const lastDataUpdateDateTime = moment(caseData.lastDataUpdateDateTime).format('Do MMMM YYYY HH:mm');
     const latestIrishDataDateTime = moment(caseData.latestIrishDataDateTime).format('Do MMMM YYYY');
 
     const totalCorkCases = util.formatNumber(caseData.totalCasesInCork);
@@ -126,6 +132,8 @@ const actions = {
               });
           });
       });
+
+    commit('SET_LAST_UPDATED_DATE', lastDataUpdateDateTime);
 
     commit('SET_IRISH_TOTALS', {
       totalIrishCases,

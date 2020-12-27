@@ -1,3 +1,4 @@
+import { mapState } from 'vuex';
 import Highcharts from 'highcharts';
 import highchartsDarkTheme from 'highcharts/themes/high-contrast-dark';
 import Tabs from '@/components/Tabs';
@@ -21,6 +22,10 @@ export default {
   },
 
   computed: {
+    ...mapState([
+      'lastDataUpdateDateTime',
+    ]),
+
     appClassesToApply() {
       const classes = ['app'];
 

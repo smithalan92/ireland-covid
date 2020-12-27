@@ -8,6 +8,9 @@
         @select-tab="selectTab"/>
     </div>
     <div class="app__container">
+      <div class="app__last-updated">
+       Last updated on the {{ lastDataUpdateDateTime }}
+      </div>
       <router-view class="app__content"/>
     </div>
     <div class="app__footer">

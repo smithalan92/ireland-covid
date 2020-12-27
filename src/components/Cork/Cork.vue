@@ -3,18 +3,10 @@
     <div class="cork__stats">
       <card class="cork__stats-card">
         <template v-slot:title>
-          {{ latestCorkDataDateTime }}
-        </template>
-        <template v-slot:subtitle>
-          latest data provided for Cork.
-        </template>
-      </card>
-      <card class="cork__stats-card">
-        <template v-slot:title>
           {{ totalCorkCases }} (+{{ newCorkCases }})
         </template>
         <template v-slot:subtitle>
-          total confirmed cases in Cork.
+          confirmed cases in Cork as of  {{ latestCorkDataDateTime }}
         </template>
       </card>
       <card class="cork__stats-card">
