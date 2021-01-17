@@ -1,18 +1,18 @@
 {
-    "totalIrishCases": 169780,
-    "totalIrishDeaths": 2595,
-    "changeInIrishCases": 3231,
-    "changeInIrishDeaths": 60,
-    "irishCasesInPast30Days": 92292,
-    "irishCasesInPast14Days": 73000,
-    "irishDeathsInPast30Days": 460,
-    "irishDeathsInPast14Days": 349,
-    "lastDataUpdateDateTime": "2021-01-16T19:00:00.950Z",
-    "latestIrishDataDateTime": "2021-01-16T00:00:00.000Z",
-    "latestCorkDataDateTime": "2021-01-14T00:00:00.000Z",
-    "totalCasesInCork": 16835,
-    "totalCorkCasesInPast30Days": 10278,
-    "totalCorkCasesInPast14Days": 8630,
+    "totalIrishCases": 172726,
+    "totalIrishDeaths": 2608,
+    "changeInIrishCases": 2944,
+    "changeInIrishDeaths": 13,
+    "irishCasesInPast30Days": 94654,
+    "irishCasesInPast14Days": 70982,
+    "irishDeathsInPast30Days": 467,
+    "irishDeathsInPast14Days": 355,
+    "lastDataUpdateDateTime": "2021-01-17T19:00:00.774Z",
+    "latestIrishDataDateTime": "2021-01-17T00:00:00.000Z",
+    "latestCorkDataDateTime": "2021-01-15T00:00:00.000Z",
+    "totalCasesInCork": 17223,
+    "totalCorkCasesInPast30Days": 10626,
+    "totalCorkCasesInPast14Days": 8629,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -1213,6 +1213,10 @@
         {
             "date": "2021-01-14T00:00:00.000Z",
             "newCases": 423
+        },
+        {
+            "date": "2021-01-15T00:00:00.000Z",
+            "newCases": 388
         }
     ],
     "irishData": [
@@ -2820,138 +2824,143 @@
             "date": "2021-01-16T00:00:00.000Z",
             "newCases": 3231,
             "newDeaths": 60
+        },
+        {
+            "date": "2021-01-17T00:00:00.000Z",
+            "newCases": 2944,
+            "newDeaths": 13
         }
     ],
     "countyData": {
         "carlow": {
-            "totalCases": 1881,
-            "totalCases14Days": 974,
-            "incidenceRate14Days": 1711
+            "totalCases": 1929,
+            "totalCases14Days": 981,
+            "incidenceRate14Days": 1723
         },
         "cavan": {
-            "totalCases": 3761,
-            "totalCases14Days": 1165,
-            "incidenceRate14Days": 1529
+            "totalCases": 3876,
+            "totalCases14Days": 1188,
+            "incidenceRate14Days": 1560
         },
         "clare": {
-            "totalCases": 3773,
-            "totalCases14Days": 1941,
-            "incidenceRate14Days": 1634
+            "totalCases": 3822,
+            "totalCases14Days": 1925,
+            "incidenceRate14Days": 1620
         },
         "cork": {
-            "totalCases": 16835,
-            "totalCases14Days": 8630,
+            "totalCases": 17223,
+            "totalCases14Days": 8629,
             "incidenceRate14Days": 1590
         },
         "donegal": {
-            "totalCases": 6869,
-            "totalCases14Days": 2544,
-            "incidenceRate14Days": 1598
+            "totalCases": 6952,
+            "totalCases14Days": 2289,
+            "incidenceRate14Days": 1438
         },
         "dublin": {
-            "totalCases": 57052,
-            "totalCases14Days": 23350,
-            "incidenceRate14Days": 1733
+            "totalCases": 57983,
+            "totalCases14Days": 23926,
+            "incidenceRate14Days": 1776
         },
         "galway": {
-            "totalCases": 6347,
-            "totalCases14Days": 2789,
-            "incidenceRate14Days": 1081
+            "totalCases": 6479,
+            "totalCases14Days": 2805,
+            "incidenceRate14Days": 1087
         },
         "kerry": {
-            "totalCases": 3623,
-            "totalCases14Days": 1675,
-            "incidenceRate14Days": 1134
+            "totalCases": 3672,
+            "totalCases14Days": 1626,
+            "incidenceRate14Days": 1101
         },
         "kildare": {
-            "totalCases": 7353,
-            "totalCases14Days": 2563,
-            "incidenceRate14Days": 1152
+            "totalCases": 7444,
+            "totalCases14Days": 2607,
+            "incidenceRate14Days": 1172
         },
         "kilkenny": {
-            "totalCases": 2840,
-            "totalCases14Days": 1229,
-            "incidenceRate14Days": 1239
+            "totalCases": 2880,
+            "totalCases14Days": 1182,
+            "incidenceRate14Days": 1191
         },
         "laois": {
-            "totalCases": 2204,
-            "totalCases14Days": 849,
-            "incidenceRate14Days": 1002
+            "totalCases": 2252,
+            "totalCases14Days": 793,
+            "incidenceRate14Days": 936
         },
         "leitrim": {
-            "totalCases": 552,
-            "totalCases14Days": 231,
-            "incidenceRate14Days": 721
+            "totalCases": 564,
+            "totalCases14Days": 214,
+            "incidenceRate14Days": 668
         },
         "limerick": {
-            "totalCases": 8239,
-            "totalCases14Days": 4160,
-            "incidenceRate14Days": 2134
+            "totalCases": 8388,
+            "totalCases14Days": 4100,
+            "incidenceRate14Days": 2104
         },
         "longford": {
-            "totalCases": 1170,
-            "totalCases14Days": 380,
-            "incidenceRate14Days": 930
+            "totalCases": 1175,
+            "totalCases14Days": 346,
+            "incidenceRate14Days": 847
         },
         "louth": {
-            "totalCases": 6349,
-            "totalCases14Days": 3182,
-            "incidenceRate14Days": 2469
+            "totalCases": 6587,
+            "totalCases14Days": 3161,
+            "incidenceRate14Days": 2453
         },
         "mayo": {
-            "totalCases": 4334,
-            "totalCases14Days": 2273,
-            "incidenceRate14Days": 1742
+            "totalCases": 4435,
+            "totalCases14Days": 2141,
+            "incidenceRate14Days": 1641
         },
         "meath": {
-            "totalCases": 6709,
-            "totalCases14Days": 2555,
-            "incidenceRate14Days": 1310
+            "totalCases": 6854,
+            "totalCases14Days": 2522,
+            "incidenceRate14Days": 1293
         },
         "monaghan": {
-            "totalCases": 3538,
-            "totalCases14Days": 1822,
-            "incidenceRate14Days": 2968
+            "totalCases": 3622,
+            "totalCases14Days": 1776,
+            "incidenceRate14Days": 2893
         },
         "offaly": {
-            "totalCases": 2183,
-            "totalCases14Days": 818,
-            "incidenceRate14Days": 1049
+            "totalCases": 2227,
+            "totalCases14Days": 776,
+            "incidenceRate14Days": 995
         },
         "roscommon": {
-            "totalCases": 1784,
-            "totalCases14Days": 653,
-            "incidenceRate14Days": 1012
+            "totalCases": 1813,
+            "totalCases14Days": 614,
+            "incidenceRate14Days": 951
         },
         "sligo": {
-            "totalCases": 1732,
-            "totalCases14Days": 734,
-            "incidenceRate14Days": 1120
+            "totalCases": 1756,
+            "totalCases14Days": 608,
+            "incidenceRate14Days": 928
         },
         "tipperary": {
-            "totalCases": 3520,
-            "totalCases14Days": 1628,
-            "incidenceRate14Days": 1020
+            "totalCases": 3582,
+            "totalCases14Days": 1631,
+            "incidenceRate14Days": 1022
         },
         "waterford": {
-            "totalCases": 3684,
-            "totalCases14Days": 2295,
-            "incidenceRate14Days": 1975
+            "totalCases": 3837,
+            "totalCases14Days": 2381,
+            "incidenceRate14Days": 2049
         },
         "westmeath": {
-            "totalCases": 2422,
-            "totalCases14Days": 670,
-            "incidenceRate14Days": 755
+            "totalCases": 2454,
+            "totalCases14Days": 669,
+            "incidenceRate14Days": 754
         },
         "wexford": {
-            "totalCases": 4721,
-            "totalCases14Days": 2767,
-            "incidenceRate14Days": 1848
+            "totalCases": 4857,
+            "totalCases14Days": 2800,
+            "incidenceRate14Days": 1870
         },
         "wicklow": {
-            "totalCases": 3074,
-            "totalCases14Days": 1140,
-            "incidenceRate14Days": 800
+            "totalCases": 3119,
+            "totalCases14Days": 1167,
+            "incidenceRate14Days": 819
         }
     }
 }
