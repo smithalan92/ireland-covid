@@ -7,7 +7,7 @@ const routes = [
   {
     name: 'root',
     path: '/',
-    redirect: '/cork',
+    redirect: '/ireland',
   },
   {
     name: 'cork',

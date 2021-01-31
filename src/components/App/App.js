@@ -41,7 +41,7 @@ export default {
 
   methods: {
     selectTab(tab) {
-      this.$router.push({ name: tab });
+      this.$router.push({ name: tab.route });
     },
 
     onWindowResize() {

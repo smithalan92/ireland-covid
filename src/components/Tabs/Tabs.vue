@@ -2,11 +2,11 @@
   <div class="tabs">
     <div
       class="tabs__tab"
-      :class="{ 'tabs__tab--selected': selectedTab === tab }"
+      :class="{ 'tabs__tab--selected': selectedTab.route === tab.route }"
       v-for="tab in tabs"
-      :key="tab"
+      :key="tab.route"
       @click="onSelectTab(tab)">
-      {{ tab }}
+      {{ tab.label }}
     </div>
   </div>
 </template>

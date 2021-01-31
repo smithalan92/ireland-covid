@@ -2,7 +2,7 @@
   <div
     :class="appClassesToApply">
     <div class="app__header">
-     <div class="app__header-title">Cork confirmed COVID-19 cases</div>
+     <div class="app__header-title">COVID-19 cases in Ireland</div>
      <tabs
         class="app__tabs"
         @select-tab="selectTab"/>
