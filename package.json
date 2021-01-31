@@ -1,5 +1,5 @@
 {
-  "name": "cork-covid",
+  "name": "ireland-covid",
   "version": "0.1.0",
   "author": "Alan Smith",
   "scripts": {
@@ -34,6 +34,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smithalan92/cork-daily-covid-cases.git"
+    "url": "git+https://github.com/smithalan92/ireland-covid.git"
   }
 }
