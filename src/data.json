@@ -1,18 +1,18 @@
 {
-    "totalIrishCases": 254870,
+    "totalIrishCases": 262787,
     "totalIrishDeaths": 4941,
-    "changeInIrishCases": 425,
-    "changeInIrishDeaths": 4,
-    "irishCasesInPast30Days": 12869,
-    "irishCasesInPast14Days": 6063,
-    "irishDeathsInPast30Days": 147,
-    "irishDeathsInPast14Days": 49,
-    "lastDataUpdateDateTime": "2021-06-01T19:00:00.587Z",
-    "latestIrishDataDateTime": "2021-05-14T00:00:00.000Z",
+    "changeInIrishCases": 407,
+    "changeInIrishDeaths": 0,
+    "irishCasesInPast30Days": 12556,
+    "irishCasesInPast14Days": 5811,
+    "irishDeathsInPast30Days": 45,
+    "irishDeathsInPast14Days": 0,
+    "lastDataUpdateDateTime": "2021-06-02T19:00:05.064Z",
+    "latestIrishDataDateTime": "2021-06-02T00:00:00.000Z",
     "latestCorkDataDateTime": "2021-05-11T00:00:00.000Z",
     "totalCasesInCork": 22757,
-    "totalCorkCasesInPast30Days": 741,
-    "totalCorkCasesInPast14Days": 455,
+    "totalCorkCasesInPast30Days": 314,
+    "totalCorkCasesInPast14Days": 0,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -1681,6 +1681,82 @@
         {
             "date": "2021-05-11T00:00:00.000Z",
             "newCases": 34
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
         },
         {
             "date": "2021-05-11T00:00:00.000Z",
@@ -3882,6 +3958,101 @@
             "date": "2021-05-14T00:00:00.000Z",
             "newCases": 425,
             "newDeaths": 4
+        },
+        {
+            "date": "2021-05-15T00:00:00.000Z",
+            "newCases": 461,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-16T00:00:00.000Z",
+            "newCases": 375,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-17T00:00:00.000Z",
+            "newCases": 379,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-18T00:00:00.000Z",
+            "newCases": 365,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-19T00:00:00.000Z",
+            "newCases": 526,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-20T00:00:00.000Z",
+            "newCases": 470,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-21T00:00:00.000Z",
+            "newCases": 533,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-22T00:00:00.000Z",
+            "newCases": 384,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-23T00:00:00.000Z",
+            "newCases": 447,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-24T00:00:00.000Z",
+            "newCases": 349,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-25T00:00:00.000Z",
+            "newCases": 353,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-26T00:00:00.000Z",
+            "newCases": 445,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-27T00:00:00.000Z",
+            "newCases": 432,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-28T00:00:00.000Z",
+            "newCases": 461,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-29T00:00:00.000Z",
+            "newCases": 456,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-30T00:00:00.000Z",
+            "newCases": 367,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-05-31T00:00:00.000Z",
+            "newCases": 370,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-01T00:00:00.000Z",
+            "newCases": 337,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-02T00:00:00.000Z",
+            "newCases": 407,
+            "newDeaths": 0
         }
     ],
     "countyData": {}
