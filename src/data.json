@@ -1,17 +1,17 @@
 {
-    "totalIrishCases": 265341,
+    "totalIrishCases": 265739,
     "totalIrishDeaths": 4941,
-    "changeInIrishCases": 259,
+    "changeInIrishCases": 398,
     "changeInIrishDeaths": 0,
-    "irishCasesInPast30Days": 12255,
-    "irishCasesInPast14Days": 5460,
-    "irishDeathsInPast30Days": 21,
+    "irishCasesInPast30Days": 12274,
+    "irishCasesInPast14Days": 5426,
+    "irishDeathsInPast30Days": 12,
     "irishDeathsInPast14Days": 0,
-    "lastDataUpdateDateTime": "2021-06-09T19:00:01.538Z",
-    "latestIrishDataDateTime": "2021-06-09T00:00:00.000Z",
+    "lastDataUpdateDateTime": "2021-06-10T19:00:02.970Z",
+    "latestIrishDataDateTime": "2021-06-10T00:00:00.000Z",
     "latestCorkDataDateTime": "2021-05-11T00:00:00.000Z",
     "totalCasesInCork": 22757,
-    "totalCorkCasesInPast30Days": 69,
+    "totalCorkCasesInPast30Days": 55,
     "totalCorkCasesInPast14Days": 0,
     "corkData": [
         {
@@ -1681,6 +1681,10 @@
         {
             "date": "2021-05-11T00:00:00.000Z",
             "newCases": 34
+        },
+        {
+            "date": "2021-05-11T00:00:00.000Z",
+            "newCases": 0
         },
         {
             "date": "2021-05-11T00:00:00.000Z",
@@ -4115,6 +4119,11 @@
         {
             "date": "2021-06-09T00:00:00.000Z",
             "newCases": 259,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-10T00:00:00.000Z",
+            "newCases": 398,
             "newDeaths": 0
         }
     ],
