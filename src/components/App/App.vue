@@ -7,9 +7,6 @@
         class="app__tabs"
         @select-tab="selectTab"/>
     </div>
-    <div class="app__banner">
-      Due to the HSE cyber attack in May, data since then is not available as the national data is not being updated on the HSE Geohive.
-    </div>
     <div class="app__container">
       <div class="app__last-updated">
        Last updated on the {{ lastDataUpdateDateTime }}

@@ -42,7 +42,7 @@ const mutations = {
     state.totalIrishDeathsInPast30Days = data.totalIrishDeathsInPast30Days;
     state.totalIrishDeathsInPast14Days = data.totalIrishDeathsInPast14Days;
     state.changeInIrishCases = data.changeInIrishCases;
-    state.changeInIrishDeaths = data.changeInIrishDeaths;
+    state.changeInIrishDeaths = data.changeInIrishDeaths || 0;
     state.latestIrishDataDateTime = data.latestIrishDataDateTime;
   },
 
