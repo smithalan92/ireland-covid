@@ -2,7 +2,6 @@ const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
 module.exports = {
-  outputDir: 'docs',
   devServer: {
     open: true,
   },
