@@ -1,18 +1,18 @@
 {
-    "totalIrishCases": 266058,
-    "totalIrishDeaths": 4941,
-    "changeInIrishCases": 319,
-    "changeInIrishDeaths": 0,
-    "irishCasesInPast30Days": 12145,
-    "irishCasesInPast14Days": 5284,
-    "irishDeathsInPast30Days": 4,
-    "irishDeathsInPast14Days": 0,
-    "lastDataUpdateDateTime": "2021-07-07T19:00:00.740Z",
-    "latestIrishDataDateTime": "2021-06-11T00:00:00.000Z",
-    "latestCorkDataDateTime": "2021-05-11T00:00:00.000Z",
-    "totalCasesInCork": 22757,
-    "totalCorkCasesInPast30Days": 34,
-    "totalCorkCasesInPast14Days": 0,
+    "totalIrishCases": 419087,
+    "totalIrishDeaths": 5306,
+    "changeInIrishCases": 2399,
+    "changeInIrishDeaths": null,
+    "irishCasesInPast30Days": 43790,
+    "irishCasesInPast14Days": 23485,
+    "irishDeathsInPast30Days": 127,
+    "irishDeathsInPast14Days": 57,
+    "lastDataUpdateDateTime": "2021-10-19T21:39:54.314Z",
+    "latestIrishDataDateTime": "2021-10-19T00:00:00.000Z",
+    "latestCorkDataDateTime": "2021-10-17T00:00:00.000Z",
+    "totalCasesInCork": 36242,
+    "totalCorkCasesInPast30Days": 4038,
+    "totalCorkCasesInPast14Days": 2279,
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -844,7 +844,7 @@
         },
         {
             "date": "2020-10-14T00:00:00.000Z",
-            "newCases": 173
+            "newCases": 172
         },
         {
             "date": "2020-10-15T00:00:00.000Z",
@@ -1104,7 +1104,7 @@
         },
         {
             "date": "2020-12-18T00:00:00.000Z",
-            "newCases": 56
+            "newCases": 55
         },
         {
             "date": "2020-12-19T00:00:00.000Z",
@@ -1148,7 +1148,7 @@
         },
         {
             "date": "2020-12-29T00:00:00.000Z",
-            "newCases": 167
+            "newCases": 165
         },
         {
             "date": "2020-12-30T00:00:00.000Z",
@@ -1168,7 +1168,7 @@
         },
         {
             "date": "2021-01-03T00:00:00.000Z",
-            "newCases": 286
+            "newCases": 287
         },
         {
             "date": "2021-01-04T00:00:00.000Z",
@@ -1184,7 +1184,7 @@
         },
         {
             "date": "2021-01-07T00:00:00.000Z",
-            "newCases": 1373
+            "newCases": 1372
         },
         {
             "date": "2021-01-08T00:00:00.000Z",
@@ -1192,11 +1192,11 @@
         },
         {
             "date": "2021-01-09T00:00:00.000Z",
-            "newCases": 862
+            "newCases": 861
         },
         {
             "date": "2021-01-10T00:00:00.000Z",
-            "newCases": 691
+            "newCases": 689
         },
         {
             "date": "2021-01-11T00:00:00.000Z",
@@ -1224,15 +1224,15 @@
         },
         {
             "date": "2021-01-17T00:00:00.000Z",
-            "newCases": 236
+            "newCases": 235
         },
         {
             "date": "2021-01-18T00:00:00.000Z",
-            "newCases": 202
+            "newCases": 201
         },
         {
             "date": "2021-01-19T00:00:00.000Z",
-            "newCases": 310
+            "newCases": 309
         },
         {
             "date": "2021-01-20T00:00:00.000Z",
@@ -1252,11 +1252,11 @@
         },
         {
             "date": "2021-01-24T00:00:00.000Z",
-            "newCases": 162
+            "newCases": 161
         },
         {
             "date": "2021-01-25T00:00:00.000Z",
-            "newCases": 115
+            "newCases": 114
         },
         {
             "date": "2021-01-26T00:00:00.000Z",
@@ -1268,7 +1268,7 @@
         },
         {
             "date": "2021-01-28T00:00:00.000Z",
-            "newCases": 146
+            "newCases": 145
         },
         {
             "date": "2021-01-29T00:00:00.000Z",
@@ -1276,7 +1276,7 @@
         },
         {
             "date": "2021-01-30T00:00:00.000Z",
-            "newCases": 87
+            "newCases": 86
         },
         {
             "date": "2021-01-31T00:00:00.000Z",
@@ -1292,7 +1292,7 @@
         },
         {
             "date": "2021-02-03T00:00:00.000Z",
-            "newCases": 120
+            "newCases": 119
         },
         {
             "date": "2021-02-04T00:00:00.000Z",
@@ -1340,7 +1340,7 @@
         },
         {
             "date": "2021-02-15T00:00:00.000Z",
-            "newCases": 21
+            "newCases": 20
         },
         {
             "date": "2021-02-16T00:00:00.000Z",
@@ -1420,7 +1420,7 @@
         },
         {
             "date": "2021-03-07T00:00:00.000Z",
-            "newCases": 4
+            "newCases": 3
         },
         {
             "date": "2021-03-08T00:00:00.000Z",
@@ -1660,7 +1660,7 @@
         },
         {
             "date": "2021-05-06T00:00:00.000Z",
-            "newCases": 43
+            "newCases": 41
         },
         {
             "date": "2021-05-07T00:00:00.000Z",
@@ -1676,127 +1676,647 @@
         },
         {
             "date": "2021-05-10T00:00:00.000Z",
-            "newCases": 21
+            "newCases": 22
         },
         {
             "date": "2021-05-11T00:00:00.000Z",
             "newCases": 34
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-12T00:00:00.000Z",
+            "newCases": 51
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-13T00:00:00.000Z",
+            "newCases": 56
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-14T00:00:00.000Z",
+            "newCases": 20
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-15T00:00:00.000Z",
+            "newCases": 40
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-16T00:00:00.000Z",
+            "newCases": 51
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-17T00:00:00.000Z",
+            "newCases": 42
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-18T00:00:00.000Z",
+            "newCases": 58
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-19T00:00:00.000Z",
+            "newCases": 47
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-20T00:00:00.000Z",
+            "newCases": 53
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-21T00:00:00.000Z",
+            "newCases": 42
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-22T00:00:00.000Z",
+            "newCases": 40
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-23T00:00:00.000Z",
+            "newCases": 37
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-24T00:00:00.000Z",
+            "newCases": 21
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-25T00:00:00.000Z",
+            "newCases": 35
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-26T00:00:00.000Z",
+            "newCases": 37
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-27T00:00:00.000Z",
+            "newCases": 53
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-28T00:00:00.000Z",
+            "newCases": 46
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-29T00:00:00.000Z",
+            "newCases": 39
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-30T00:00:00.000Z",
+            "newCases": 34
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-05-31T00:00:00.000Z",
+            "newCases": 25
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-01T00:00:00.000Z",
+            "newCases": 18
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-02T00:00:00.000Z",
+            "newCases": 30
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-03T00:00:00.000Z",
+            "newCases": 39
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-04T00:00:00.000Z",
+            "newCases": 21
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-05T00:00:00.000Z",
+            "newCases": 42
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-06T00:00:00.000Z",
+            "newCases": 39
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-07T00:00:00.000Z",
+            "newCases": 24
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-08T00:00:00.000Z",
+            "newCases": 23
         },
         {
-            "date": "2021-05-11T00:00:00.000Z",
-            "newCases": 0
+            "date": "2021-06-09T00:00:00.000Z",
+            "newCases": 35
+        },
+        {
+            "date": "2021-06-10T00:00:00.000Z",
+            "newCases": 39
+        },
+        {
+            "date": "2021-06-11T00:00:00.000Z",
+            "newCases": 48
+        },
+        {
+            "date": "2021-06-12T00:00:00.000Z",
+            "newCases": 33
+        },
+        {
+            "date": "2021-06-13T00:00:00.000Z",
+            "newCases": 23
+        },
+        {
+            "date": "2021-06-14T00:00:00.000Z",
+            "newCases": 33
+        },
+        {
+            "date": "2021-06-15T00:00:00.000Z",
+            "newCases": 34
+        },
+        {
+            "date": "2021-06-16T00:00:00.000Z",
+            "newCases": 38
+        },
+        {
+            "date": "2021-06-17T00:00:00.000Z",
+            "newCases": 18
+        },
+        {
+            "date": "2021-06-18T00:00:00.000Z",
+            "newCases": 13
+        },
+        {
+            "date": "2021-06-19T00:00:00.000Z",
+            "newCases": 15
+        },
+        {
+            "date": "2021-06-20T00:00:00.000Z",
+            "newCases": 11
+        },
+        {
+            "date": "2021-06-21T00:00:00.000Z",
+            "newCases": 21
+        },
+        {
+            "date": "2021-06-22T00:00:00.000Z",
+            "newCases": 24
+        },
+        {
+            "date": "2021-06-23T00:00:00.000Z",
+            "newCases": 15
+        },
+        {
+            "date": "2021-06-24T00:00:00.000Z",
+            "newCases": 21
+        },
+        {
+            "date": "2021-06-25T00:00:00.000Z",
+            "newCases": 20
+        },
+        {
+            "date": "2021-06-26T00:00:00.000Z",
+            "newCases": 8
+        },
+        {
+            "date": "2021-06-27T00:00:00.000Z",
+            "newCases": 12
+        },
+        {
+            "date": "2021-06-28T00:00:00.000Z",
+            "newCases": 10
+        },
+        {
+            "date": "2021-06-29T00:00:00.000Z",
+            "newCases": 17
+        },
+        {
+            "date": "2021-06-30T00:00:00.000Z",
+            "newCases": 20
+        },
+        {
+            "date": "2021-07-01T00:00:00.000Z",
+            "newCases": 17
+        },
+        {
+            "date": "2021-07-02T00:00:00.000Z",
+            "newCases": 16
+        },
+        {
+            "date": "2021-07-03T00:00:00.000Z",
+            "newCases": 15
+        },
+        {
+            "date": "2021-07-04T00:00:00.000Z",
+            "newCases": 11
+        },
+        {
+            "date": "2021-07-05T00:00:00.000Z",
+            "newCases": 17
+        },
+        {
+            "date": "2021-07-06T00:00:00.000Z",
+            "newCases": 26
+        },
+        {
+            "date": "2021-07-07T00:00:00.000Z",
+            "newCases": 20
+        },
+        {
+            "date": "2021-07-08T00:00:00.000Z",
+            "newCases": 24
+        },
+        {
+            "date": "2021-07-09T00:00:00.000Z",
+            "newCases": 39
+        },
+        {
+            "date": "2021-07-10T00:00:00.000Z",
+            "newCases": 22
+        },
+        {
+            "date": "2021-07-11T00:00:00.000Z",
+            "newCases": 52
+        },
+        {
+            "date": "2021-07-12T00:00:00.000Z",
+            "newCases": 45
+        },
+        {
+            "date": "2021-07-13T00:00:00.000Z",
+            "newCases": 48
+        },
+        {
+            "date": "2021-07-14T00:00:00.000Z",
+            "newCases": 56
+        },
+        {
+            "date": "2021-07-15T00:00:00.000Z",
+            "newCases": 47
+        },
+        {
+            "date": "2021-07-16T00:00:00.000Z",
+            "newCases": 86
+        },
+        {
+            "date": "2021-07-17T00:00:00.000Z",
+            "newCases": 75
+        },
+        {
+            "date": "2021-07-18T00:00:00.000Z",
+            "newCases": 68
+        },
+        {
+            "date": "2021-07-19T00:00:00.000Z",
+            "newCases": 39
+        },
+        {
+            "date": "2021-07-20T00:00:00.000Z",
+            "newCases": 77
+        },
+        {
+            "date": "2021-07-21T00:00:00.000Z",
+            "newCases": 119
+        },
+        {
+            "date": "2021-07-22T00:00:00.000Z",
+            "newCases": 115
+        },
+        {
+            "date": "2021-07-23T00:00:00.000Z",
+            "newCases": 114
+        },
+        {
+            "date": "2021-07-24T00:00:00.000Z",
+            "newCases": 109
+        },
+        {
+            "date": "2021-07-25T00:00:00.000Z",
+            "newCases": 78
+        },
+        {
+            "date": "2021-07-26T00:00:00.000Z",
+            "newCases": 71
+        },
+        {
+            "date": "2021-07-27T00:00:00.000Z",
+            "newCases": 96
+        },
+        {
+            "date": "2021-07-28T00:00:00.000Z",
+            "newCases": 76
+        },
+        {
+            "date": "2021-07-29T00:00:00.000Z",
+            "newCases": 124
+        },
+        {
+            "date": "2021-07-30T00:00:00.000Z",
+            "newCases": 118
+        },
+        {
+            "date": "2021-07-31T00:00:00.000Z",
+            "newCases": 93
+        },
+        {
+            "date": "2021-08-01T00:00:00.000Z",
+            "newCases": 103
+        },
+        {
+            "date": "2021-08-02T00:00:00.000Z",
+            "newCases": 92
+        },
+        {
+            "date": "2021-08-03T00:00:00.000Z",
+            "newCases": 14
+        },
+        {
+            "date": "2021-08-04T00:00:00.000Z",
+            "newCases": 35
+        },
+        {
+            "date": "2021-08-05T00:00:00.000Z",
+            "newCases": 337
+        },
+        {
+            "date": "2021-08-06T00:00:00.000Z",
+            "newCases": 167
+        },
+        {
+            "date": "2021-08-07T00:00:00.000Z",
+            "newCases": 139
+        },
+        {
+            "date": "2021-08-08T00:00:00.000Z",
+            "newCases": 96
+        },
+        {
+            "date": "2021-08-09T00:00:00.000Z",
+            "newCases": 35
+        },
+        {
+            "date": "2021-08-10T00:00:00.000Z",
+            "newCases": 151
+        },
+        {
+            "date": "2021-08-11T00:00:00.000Z",
+            "newCases": 127
+        },
+        {
+            "date": "2021-08-12T00:00:00.000Z",
+            "newCases": 111
+        },
+        {
+            "date": "2021-08-13T00:00:00.000Z",
+            "newCases": 149
+        },
+        {
+            "date": "2021-08-14T00:00:00.000Z",
+            "newCases": 135
+        },
+        {
+            "date": "2021-08-15T00:00:00.000Z",
+            "newCases": 205
+        },
+        {
+            "date": "2021-08-16T00:00:00.000Z",
+            "newCases": 77
+        },
+        {
+            "date": "2021-08-17T00:00:00.000Z",
+            "newCases": 151
+        },
+        {
+            "date": "2021-08-18T00:00:00.000Z",
+            "newCases": 117
+        },
+        {
+            "date": "2021-08-19T00:00:00.000Z",
+            "newCases": 105
+        },
+        {
+            "date": "2021-08-20T00:00:00.000Z",
+            "newCases": 266
+        },
+        {
+            "date": "2021-08-21T00:00:00.000Z",
+            "newCases": 105
+        },
+        {
+            "date": "2021-08-22T00:00:00.000Z",
+            "newCases": 141
+        },
+        {
+            "date": "2021-08-23T00:00:00.000Z",
+            "newCases": 93
+        },
+        {
+            "date": "2021-08-24T00:00:00.000Z",
+            "newCases": 61
+        },
+        {
+            "date": "2021-08-25T00:00:00.000Z",
+            "newCases": 176
+        },
+        {
+            "date": "2021-08-26T00:00:00.000Z",
+            "newCases": 192
+        },
+        {
+            "date": "2021-08-27T00:00:00.000Z",
+            "newCases": 118
+        },
+        {
+            "date": "2021-08-28T00:00:00.000Z",
+            "newCases": 108
+        },
+        {
+            "date": "2021-08-29T00:00:00.000Z",
+            "newCases": 191
+        },
+        {
+            "date": "2021-08-30T00:00:00.000Z",
+            "newCases": 119
+        },
+        {
+            "date": "2021-08-31T00:00:00.000Z",
+            "newCases": 177
+        },
+        {
+            "date": "2021-09-01T00:00:00.000Z",
+            "newCases": 135
+        },
+        {
+            "date": "2021-09-02T00:00:00.000Z",
+            "newCases": 144
+        },
+        {
+            "date": "2021-09-03T00:00:00.000Z",
+            "newCases": 84
+        },
+        {
+            "date": "2021-09-04T00:00:00.000Z",
+            "newCases": 152
+        },
+        {
+            "date": "2021-09-05T00:00:00.000Z",
+            "newCases": 79
+        },
+        {
+            "date": "2021-09-06T00:00:00.000Z",
+            "newCases": 71
+        },
+        {
+            "date": "2021-09-07T00:00:00.000Z",
+            "newCases": 123
+        },
+        {
+            "date": "2021-09-08T00:00:00.000Z",
+            "newCases": 114
+        },
+        {
+            "date": "2021-09-09T00:00:00.000Z",
+            "newCases": 101
+        },
+        {
+            "date": "2021-09-10T00:00:00.000Z",
+            "newCases": 46
+        },
+        {
+            "date": "2021-09-11T00:00:00.000Z",
+            "newCases": 171
+        },
+        {
+            "date": "2021-09-12T00:00:00.000Z",
+            "newCases": 148
+        },
+        {
+            "date": "2021-09-13T00:00:00.000Z",
+            "newCases": 65
+        },
+        {
+            "date": "2021-09-14T00:00:00.000Z",
+            "newCases": 79
+        },
+        {
+            "date": "2021-09-15T00:00:00.000Z",
+            "newCases": 142
+        },
+        {
+            "date": "2021-09-16T00:00:00.000Z",
+            "newCases": 85
+        },
+        {
+            "date": "2021-09-17T00:00:00.000Z",
+            "newCases": 149
+        },
+        {
+            "date": "2021-09-18T00:00:00.000Z",
+            "newCases": 106
+        },
+        {
+            "date": "2021-09-19T00:00:00.000Z",
+            "newCases": 119
+        },
+        {
+            "date": "2021-09-20T00:00:00.000Z",
+            "newCases": 98
+        },
+        {
+            "date": "2021-09-21T00:00:00.000Z",
+            "newCases": 89
+        },
+        {
+            "date": "2021-09-22T00:00:00.000Z",
+            "newCases": 107
+        },
+        {
+            "date": "2021-09-23T00:00:00.000Z",
+            "newCases": 98
+        },
+        {
+            "date": "2021-09-24T00:00:00.000Z",
+            "newCases": 138
+        },
+        {
+            "date": "2021-09-25T00:00:00.000Z",
+            "newCases": 146
+        },
+        {
+            "date": "2021-09-26T00:00:00.000Z",
+            "newCases": 88
+        },
+        {
+            "date": "2021-09-27T00:00:00.000Z",
+            "newCases": 127
+        },
+        {
+            "date": "2021-09-28T00:00:00.000Z",
+            "newCases": 90
+        },
+        {
+            "date": "2021-09-29T00:00:00.000Z",
+            "newCases": 115
+        },
+        {
+            "date": "2021-09-30T00:00:00.000Z",
+            "newCases": 97
+        },
+        {
+            "date": "2021-10-01T00:00:00.000Z",
+            "newCases": 120
+        },
+        {
+            "date": "2021-10-02T00:00:00.000Z",
+            "newCases": 136
+        },
+        {
+            "date": "2021-10-03T00:00:00.000Z",
+            "newCases": 85
+        },
+        {
+            "date": "2021-10-04T00:00:00.000Z",
+            "newCases": 115
+        },
+        {
+            "date": "2021-10-05T00:00:00.000Z",
+            "newCases": 81
+        },
+        {
+            "date": "2021-10-06T00:00:00.000Z",
+            "newCases": 125
+        },
+        {
+            "date": "2021-10-07T00:00:00.000Z",
+            "newCases": 216
+        },
+        {
+            "date": "2021-10-08T00:00:00.000Z",
+            "newCases": 191
+        },
+        {
+            "date": "2021-10-09T00:00:00.000Z",
+            "newCases": 183
+        },
+        {
+            "date": "2021-10-10T00:00:00.000Z",
+            "newCases": 194
+        },
+        {
+            "date": "2021-10-11T00:00:00.000Z",
+            "newCases": 134
+        },
+        {
+            "date": "2021-10-12T00:00:00.000Z",
+            "newCases": 226
+        },
+        {
+            "date": "2021-10-13T00:00:00.000Z",
+            "newCases": 148
+        },
+        {
+            "date": "2021-10-14T00:00:00.000Z",
+            "newCases": 193
+        },
+        {
+            "date": "2021-10-15T00:00:00.000Z",
+            "newCases": 191
+        },
+        {
+            "date": "2021-10-16T00:00:00.000Z",
+            "newCases": 109
+        },
+        {
+            "date": "2021-10-17T00:00:00.000Z",
+            "newCases": 173
         }
     ],
     "irishData": [
@@ -4134,7 +4654,788 @@
             "date": "2021-06-11T00:00:00.000Z",
             "newCases": 319,
             "newDeaths": 0
+        },
+        {
+            "date": "2021-06-12T00:00:00.000Z",
+            "newCases": 431,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-13T00:00:00.000Z",
+            "newCases": 315,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-14T00:00:00.000Z",
+            "newCases": 242,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-15T00:00:00.000Z",
+            "newCases": 283,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-16T00:00:00.000Z",
+            "newCases": 329,
+            "newDeaths": 0
+        },
+        {
+            "date": "2021-06-17T00:00:00.000Z",
+            "newCases": 373,
+            "newDeaths": 38
+        },
+        {
+            "date": "2021-06-18T00:00:00.000Z",
+            "newCases": 313,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-19T00:00:00.000Z",
+            "newCases": 393,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-20T00:00:00.000Z",
+            "newCases": 288,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-21T00:00:00.000Z",
+            "newCases": 284,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-22T00:00:00.000Z",
+            "newCases": 294,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-23T00:00:00.000Z",
+            "newCases": 348,
+            "newDeaths": 10
+        },
+        {
+            "date": "2021-06-24T00:00:00.000Z",
+            "newCases": 304,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-25T00:00:00.000Z",
+            "newCases": 380,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-26T00:00:00.000Z",
+            "newCases": 443,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-27T00:00:00.000Z",
+            "newCases": 340,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-28T00:00:00.000Z",
+            "newCases": 305,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-29T00:00:00.000Z",
+            "newCases": 351,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-06-30T00:00:00.000Z",
+            "newCases": 452,
+            "newDeaths": 9
+        },
+        {
+            "date": "2021-07-01T00:00:00.000Z",
+            "newCases": 448,
+            "newDeaths": 2
+        },
+        {
+            "date": "2021-07-02T00:00:00.000Z",
+            "newCases": 512,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-03T00:00:00.000Z",
+            "newCases": 448,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-04T00:00:00.000Z",
+            "newCases": 562,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-05T00:00:00.000Z",
+            "newCases": 365,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-06T00:00:00.000Z",
+            "newCases": 397,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-07T00:00:00.000Z",
+            "newCases": 581,
+            "newDeaths": 6
+        },
+        {
+            "date": "2021-07-08T00:00:00.000Z",
+            "newCases": 534,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-09T00:00:00.000Z",
+            "newCases": 631,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-10T00:00:00.000Z",
+            "newCases": 581,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-11T00:00:00.000Z",
+            "newCases": 576,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-12T00:00:00.000Z",
+            "newCases": 600,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-13T00:00:00.000Z",
+            "newCases": 589,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-14T00:00:00.000Z",
+            "newCases": 783,
+            "newDeaths": 12
+        },
+        {
+            "date": "2021-07-15T00:00:00.000Z",
+            "newCases": 994,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-16T00:00:00.000Z",
+            "newCases": 1173,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-17T00:00:00.000Z",
+            "newCases": 1377,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-18T00:00:00.000Z",
+            "newCases": 1179,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-19T00:00:00.000Z",
+            "newCases": 1071,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-20T00:00:00.000Z",
+            "newCases": 1110,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-21T00:00:00.000Z",
+            "newCases": 1378,
+            "newDeaths": 8
+        },
+        {
+            "date": "2021-07-22T00:00:00.000Z",
+            "newCases": 1189,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-23T00:00:00.000Z",
+            "newCases": 1386,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-24T00:00:00.000Z",
+            "newCases": 1345,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-25T00:00:00.000Z",
+            "newCases": 1126,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-26T00:00:00.000Z",
+            "newCases": 1345,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-27T00:00:00.000Z",
+            "newCases": 1120,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-28T00:00:00.000Z",
+            "newCases": 1408,
+            "newDeaths": 9
+        },
+        {
+            "date": "2021-07-29T00:00:00.000Z",
+            "newCases": 1361,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-30T00:00:00.000Z",
+            "newCases": 1501,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-07-31T00:00:00.000Z",
+            "newCases": 1427,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-01T00:00:00.000Z",
+            "newCases": 1098,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-02T00:00:00.000Z",
+            "newCases": 1352,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-03T00:00:00.000Z",
+            "newCases": 1015,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-04T00:00:00.000Z",
+            "newCases": 1314,
+            "newDeaths": 9
+        },
+        {
+            "date": "2021-08-05T00:00:00.000Z",
+            "newCases": 1491,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-06T00:00:00.000Z",
+            "newCases": 1782,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-07T00:00:00.000Z",
+            "newCases": 1828,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-08T00:00:00.000Z",
+            "newCases": 1837,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-09T00:00:00.000Z",
+            "newCases": 1522,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-10T00:00:00.000Z",
+            "newCases": 1508,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-11T00:00:00.000Z",
+            "newCases": 1819,
+            "newDeaths": 15
+        },
+        {
+            "date": "2021-08-12T00:00:00.000Z",
+            "newCases": 1903,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-13T00:00:00.000Z",
+            "newCases": 1978,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-14T00:00:00.000Z",
+            "newCases": 2074,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-15T00:00:00.000Z",
+            "newCases": 1758,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-16T00:00:00.000Z",
+            "newCases": 1558,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-17T00:00:00.000Z",
+            "newCases": 1496,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-18T00:00:00.000Z",
+            "newCases": 1861,
+            "newDeaths": 15
+        },
+        {
+            "date": "2021-08-19T00:00:00.000Z",
+            "newCases": 1818,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-20T00:00:00.000Z",
+            "newCases": 2098,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-21T00:00:00.000Z",
+            "newCases": 2125,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-22T00:00:00.000Z",
+            "newCases": 1688,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-23T00:00:00.000Z",
+            "newCases": 1592,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-24T00:00:00.000Z",
+            "newCases": 1571,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-25T00:00:00.000Z",
+            "newCases": 2051,
+            "newDeaths": 18
+        },
+        {
+            "date": "2021-08-26T00:00:00.000Z",
+            "newCases": 1866,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-27T00:00:00.000Z",
+            "newCases": 1875,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-28T00:00:00.000Z",
+            "newCases": 1997,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-29T00:00:00.000Z",
+            "newCases": 1706,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-30T00:00:00.000Z",
+            "newCases": 1293,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-08-31T00:00:00.000Z",
+            "newCases": 1382,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-01T00:00:00.000Z",
+            "newCases": 1789,
+            "newDeaths": 20
+        },
+        {
+            "date": "2021-09-02T00:00:00.000Z",
+            "newCases": 1751,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-03T00:00:00.000Z",
+            "newCases": 1414,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-04T00:00:00.000Z",
+            "newCases": 1703,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-05T00:00:00.000Z",
+            "newCases": 1180,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-06T00:00:00.000Z",
+            "newCases": 1144,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-07T00:00:00.000Z",
+            "newCases": 1470,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-08T00:00:00.000Z",
+            "newCases": 1545,
+            "newDeaths": 43
+        },
+        {
+            "date": "2021-09-09T00:00:00.000Z",
+            "newCases": 1292,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-10T00:00:00.000Z",
+            "newCases": 1620,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-11T00:00:00.000Z",
+            "newCases": 1466,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-12T00:00:00.000Z",
+            "newCases": 1346,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-13T00:00:00.000Z",
+            "newCases": 1394,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-14T00:00:00.000Z",
+            "newCases": 1181,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-15T00:00:00.000Z",
+            "newCases": 1185,
+            "newDeaths": 24
+        },
+        {
+            "date": "2021-09-16T00:00:00.000Z",
+            "newCases": 1413,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-17T00:00:00.000Z",
+            "newCases": 1392,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-18T00:00:00.000Z",
+            "newCases": 1456,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-19T00:00:00.000Z",
+            "newCases": 1224,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-20T00:00:00.000Z",
+            "newCases": 1154,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-21T00:00:00.000Z",
+            "newCases": 1423,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-22T00:00:00.000Z",
+            "newCases": 1432,
+            "newDeaths": 30
+        },
+        {
+            "date": "2021-09-23T00:00:00.000Z",
+            "newCases": 1355,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-24T00:00:00.000Z",
+            "newCases": 1163,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-25T00:00:00.000Z",
+            "newCases": 1335,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-26T00:00:00.000Z",
+            "newCases": 1459,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-27T00:00:00.000Z",
+            "newCases": 1049,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-28T00:00:00.000Z",
+            "newCases": 1499,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-09-29T00:00:00.000Z",
+            "newCases": 1453,
+            "newDeaths": 40
+        },
+        {
+            "date": "2021-09-30T00:00:00.000Z",
+            "newCases": 1271,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-01T00:00:00.000Z",
+            "newCases": 1059,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-02T00:00:00.000Z",
+            "newCases": 1586,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-03T00:00:00.000Z",
+            "newCases": 1051,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-04T00:00:00.000Z",
+            "newCases": 892,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-05T00:00:00.000Z",
+            "newCases": 1124,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-06T00:00:00.000Z",
+            "newCases": 984,
+            "newDeaths": 31
+        },
+        {
+            "date": "2021-10-07T00:00:00.000Z",
+            "newCases": 1207,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-08T00:00:00.000Z",
+            "newCases": 2002,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-09T00:00:00.000Z",
+            "newCases": 1940,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-10T00:00:00.000Z",
+            "newCases": 1384,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-11T00:00:00.000Z",
+            "newCases": 1358,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-12T00:00:00.000Z",
+            "newCases": 1466,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-13T00:00:00.000Z",
+            "newCases": 2066,
+            "newDeaths": 26
+        },
+        {
+            "date": "2021-10-14T00:00:00.000Z",
+            "newCases": 1627,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-15T00:00:00.000Z",
+            "newCases": 1914,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-16T00:00:00.000Z",
+            "newCases": 2180,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-17T00:00:00.000Z",
+            "newCases": 1380,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-18T00:00:00.000Z",
+            "newCases": 1578,
+            "newDeaths": null
+        },
+        {
+            "date": "2021-10-19T00:00:00.000Z",
+            "newCases": 2399,
+            "newDeaths": null
         }
     ],
-    "countyData": {}
+    "countyData": {
+        "carlow": {
+            "totalCases": 5003,
+            "totalCases14Days": 464,
+            "incidenceRate14Days": 815
+        },
+        "cavan": {
+            "totalCases": 8676,
+            "totalCases14Days": 395,
+            "incidenceRate14Days": 519
+        },
+        "clare": {
+            "totalCases": 7768,
+            "totalCases14Days": 548,
+            "incidenceRate14Days": 461
+        },
+        "cork": {
+            "totalCases": 36242,
+            "totalCases14Days": 2279,
+            "incidenceRate14Days": 420
+        },
+        "donegal": {
+            "totalCases": 21453,
+            "totalCases14Days": 962,
+            "incidenceRate14Days": 604
+        },
+        "dublin": {
+            "totalCases": 140181,
+            "totalCases14Days": 5985,
+            "incidenceRate14Days": 444
+        },
+        "galway": {
+            "totalCases": 18973,
+            "totalCases14Days": 1056,
+            "incidenceRate14Days": 409
+        },
+        "kerry": {
+            "totalCases": 9467,
+            "totalCases14Days": 1063,
+            "incidenceRate14Days": 720
+        },
+        "kildare": {
+            "totalCases": 19070,
+            "totalCases14Days": 861,
+            "incidenceRate14Days": 387
+        },
+        "kilkenny": {
+            "totalCases": 5722,
+            "totalCases14Days": 378,
+            "incidenceRate14Days": 381
+        },
+        "laois": {
+            "totalCases": 6442,
+            "totalCases14Days": 449,
+            "incidenceRate14Days": 530
+        },
+        "leitrim": {
+            "totalCases": 1926,
+            "totalCases14Days": 162,
+            "incidenceRate14Days": 506
+        },
+        "limerick": {
+            "totalCases": 19630,
+            "totalCases14Days": 1060,
+            "incidenceRate14Days": 544
+        },
+        "longford": {
+            "totalCases": 3542,
+            "totalCases14Days": 351,
+            "incidenceRate14Days": 859
+        },
+        "louth": {
+            "totalCases": 14955,
+            "totalCases14Days": 657,
+            "incidenceRate14Days": 510
+        },
+        "mayo": {
+            "totalCases": 10994,
+            "totalCases14Days": 440,
+            "incidenceRate14Days": 337
+        },
+        "meath": {
+            "totalCases": 17072,
+            "totalCases14Days": 912,
+            "incidenceRate14Days": 468
+        },
+        "monaghan": {
+            "totalCases": 8714,
+            "totalCases14Days": 334,
+            "incidenceRate14Days": 544
+        },
+        "offaly": {
+            "totalCases": 6654,
+            "totalCases14Days": 234,
+            "incidenceRate14Days": 300
+        },
+        "roscommon": {
+            "totalCases": 5019,
+            "totalCases14Days": 280,
+            "incidenceRate14Days": 434
+        },
+        "sligo": {
+            "totalCases": 4231,
+            "totalCases14Days": 244,
+            "incidenceRate14Days": 372
+        },
+        "tipperary": {
+            "totalCases": 9991,
+            "totalCases14Days": 578,
+            "incidenceRate14Days": 362
+        },
+        "waterford": {
+            "totalCases": 9427,
+            "totalCases14Days": 1087,
+            "incidenceRate14Days": 936
+        },
+        "westmeath": {
+            "totalCases": 6976,
+            "totalCases14Days": 442,
+            "incidenceRate14Days": 498
+        },
+        "wexford": {
+            "totalCases": 10425,
+            "totalCases14Days": 480,
+            "incidenceRate14Days": 321
+        },
+        "wicklow": {
+            "totalCases": 8135,
+            "totalCases14Days": 501,
+            "incidenceRate14Days": 352
+        }
+    }
 }
