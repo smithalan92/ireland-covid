@@ -32,7 +32,8 @@
           :force-inital-expand="true"
           :records="allCorkData"
           type="stockChart"
-          title="All time overview"/>
+          title="All time overview"
+          :showTotalFigures="false"/>
       </div>
       <div
         class="cork__chart"

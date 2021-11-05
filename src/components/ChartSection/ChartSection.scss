@@ -11,8 +11,13 @@
     }
 }
 
-.chart-section__title-text {
+.chart-section__title-text-wrapper {
     flex: 1;
+}
+
+.chart-section__title-total-figures {
+    margin-top: 4px;
+    font-size: 0.8rem;
 }
 
 .chart-section__title-toggle {

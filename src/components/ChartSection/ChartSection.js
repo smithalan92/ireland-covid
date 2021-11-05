@@ -2,6 +2,7 @@ import Chart from '@/components/Chart';
 import Card from '@/components/Card';
 import Caret from '@/assets/caret.svg';
 import moment from 'moment';
+import util from '@/util';
 
 export default {
   name: 'ChartSection',
@@ -23,6 +24,10 @@ export default {
       type: String,
       required: false,
       default: 'chart',
+    },
+    showTotalFigures: {
+      type: Boolean,
+      default: true,
     },
   },
 
@@ -84,6 +89,22 @@ export default {
       }
 
       return series;
+    },
+
+    totalFigures() {
+      const results = this.records.reduce((acc, current) => {
+        acc.cases += current.newCases;
+        acc.deaths += current.newDeaths;
+        return acc;
+      }, { cases: 0, deaths: 0 });
+
+      const deaths = util.formatNumber(results.deaths);
+
+      return {
+        cases: util.formatNumber(results.cases),
+        // eslint-disable-next-line no-restricted-globals
+        deaths: isNaN(deaths) ? 'Not available' : deaths,
+      };
     },
   },
 

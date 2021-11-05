@@ -58,7 +58,8 @@
           :force-inital-expand="true"
           :records="allIrishData"
           type="stockChart"
-          title="All time overview"/>
+          title="All time overview"
+          :showTotalFigures="false"/>
       </div>
       <div
         class="ireland__chart"
