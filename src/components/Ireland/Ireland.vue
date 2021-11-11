@@ -56,10 +56,19 @@
       <div class="ireland__chart">
         <chart-section
           :force-inital-expand="true"
-          :records="allIrishData"
+          :records="allIrishCases"
           type="stockChart"
-          title="All time overview"
+          title="All time cases overview"
           :showTotalFigures="false"/>
+      </div>
+      <div class="ireland__chart">
+        <chart-section
+          :force-inital-expand="false"
+          :records="allIrishDeaths"
+          type="stockChart"
+          title="All time deaths overview"
+          :showTotalFigures="false"
+          yAxisTitle="Number of new deaths"/>
       </div>
       <div
         class="ireland__chart"

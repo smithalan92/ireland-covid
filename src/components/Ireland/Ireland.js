@@ -24,5 +24,13 @@ export default {
       'latestIrishDataDateTime',
       'orderedIrishData',
     ]),
+
+    allIrishCases() {
+      return this.allIrishData.map(({ newCases, date }) => ({ newCases, date }));
+    },
+
+    allIrishDeaths() {
+      return this.allIrishData.map(({ newDeaths, date }) => ({ newDeaths, date }));
+    },
   },
 };

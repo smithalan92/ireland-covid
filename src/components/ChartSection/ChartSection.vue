@@ -5,7 +5,7 @@
         class="chart-section__title"
         @click="onClickToggle">
         <div class="chart-section__title-text-wrapper">
-          <div>{{ title }} confirmed cases</div>
+          <div>{{ title }}</div>
           <div v-if="showTotalFigures" class="chart-section__title-total-figures">
             New Cases - {{ totalFigures.cases }} | New Deaths - {{ totalFigures.deaths }}
           </div>
@@ -22,7 +22,8 @@
         <chart
           :type="type"
           :categories="categories"
-          :series="series"/>
+          :series="series"
+          :yAxisTitle="yAxisTitle"/>
       </div>
     </template>
   </card>

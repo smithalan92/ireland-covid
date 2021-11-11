@@ -29,6 +29,11 @@ export default {
       type: Boolean,
       default: true,
     },
+    yAxisTitle: {
+      type: String,
+      required: false,
+      default: 'Number of new cases',
+    },
   },
 
   components: {
@@ -56,30 +61,28 @@ export default {
       const caseData = [];
       const deathData = [];
 
-      if (this.type === 'chart') {
-        this.records.forEach((r) => {
-          caseData.push(r.newCases);
+      this.records.forEach((r) => {
+        const timeStamp = new Date(r.date).getTime();
 
-          if (r.newDeaths !== undefined) {
-            deathData.push(r.newDeaths);
-          }
-        });
-      } else {
-        this.records.forEach((r) => {
-          const timeStamp = new Date(r.date).getTime();
+        if (r.newCases !== undefined) {
+          if (this.type === 'chart') caseData.push(r.newCases);
+          else caseData.push([timeStamp, r.newCases]);
+        }
 
-          caseData.push([timeStamp, r.newCases]);
+        if (r.newDeaths !== undefined) {
+          if (this.type === 'chart') deathData.push(r.newDeaths);
+          else deathData.push([timeStamp, r.newDeaths]);
+        }
+      });
 
-          if (r.newDeaths !== undefined) {
-            deathData.push([timeStamp, r.newDeaths]);
-          }
+      const series = [];
+
+      if (caseData.length) {
+        series.push({
+          name: 'Daily new cases',
+          data: caseData,
         });
       }
-
-      const series = [{
-        name: 'Daily new cases',
-        data: caseData,
-      }];
 
       if (deathData.length) {
         series.push({

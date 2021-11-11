@@ -24,6 +24,12 @@ export default {
       type: String,
       required: true,
     },
+
+    yAxisTitle: {
+      type: String,
+      required: false,
+      default: 'Number of new cases',
+    },
   },
 
   setup(props) {
@@ -39,7 +45,7 @@ export default {
       },
       yAxis: {
         title: {
-          text: 'Number of new cases',
+          text: props.yAxisTitle,
         },
         opposite: false,
       },

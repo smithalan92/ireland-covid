@@ -87,7 +87,13 @@ const actions = {
     const latestCorkDataDateTime = moment(caseData.latestCorkDataDateTime).format('Do MMMM YYYY');
 
     const allCorkData = caseData.corkData.sort((a, b) => new Date(a.date) - new Date(b.date));
-    const allIrishData = caseData.irishData.sort((a, b) => new Date(a.date) - new Date(b.date));
+    const allIrishData = caseData.irishData
+      .sort((a, b) => new Date(a.date) - new Date(b.date))
+      .map((r) => {
+        // eslint-disable-next-line no-param-reassign
+        if (!r.newDeaths) r.newDeaths = 0;
+        return r;
+      });
 
     const { countyData } = caseData;
 
