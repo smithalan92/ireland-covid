@@ -27,6 +27,10 @@ const state = {
   orderedIrishData: [],
   pastThreeMonthIrishData: [],
   countyData: {},
+  totalPeopleVaccinated: 0,
+  percentagePeopleFullyVaccinated: 0,
+  peopleInICU: 0,
+  peopleInHospital: 0,
 };
 
 const mutations = {
@@ -65,6 +69,18 @@ const mutations = {
 
   SET_COUNTY_DATA(state, countyData) {
     state.countyData = countyData;
+  },
+
+  SET_OTHER_DATA(state, {
+    totalPeopleVaccinated,
+    percentagePeopleFullyVaccinated,
+    peopleInICU,
+    peopleInHospital,
+  }) {
+    state.totalPeopleVaccinated = totalPeopleVaccinated;
+    state.percentagePeopleFullyVaccinated = percentagePeopleFullyVaccinated;
+    state.peopleInICU = peopleInICU;
+    state.peopleInHospital = peopleInHospital;
   },
 };
 
@@ -163,6 +179,13 @@ const actions = {
     commit('SET_CORK_DATA', { orderedCorkData, allCorkData });
     commit('SET_IRISH_DATA', { orderedIrishData, allIrishData });
     commit('SET_COUNTY_DATA', countyData);
+
+    commit('SET_OTHER_DATA', {
+      totalPeopleVaccinated: util.formatNumber(caseData.totalPeopleVaccinated),
+      percentagePeopleFullyVaccinated: `${caseData.percentagePeopleFullyVaccinated}%`,
+      peopleInICU: util.formatNumber(caseData.peopleInICU),
+      peopleInHospital: util.formatNumber(caseData.peopleInHospital),
+    });
   },
 };
 

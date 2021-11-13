@@ -23,6 +23,10 @@ export default {
       'changeInIrishDeaths',
       'latestIrishDataDateTime',
       'orderedIrishData',
+      'totalPeopleVaccinated',
+      'percentagePeopleFullyVaccinated',
+      'peopleInICU',
+      'peopleInHospital',
     ]),
 
     allIrishCases() {

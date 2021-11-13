@@ -52,6 +52,32 @@
         </template>
       </card>
     </div>
+    <div class="ireland__stats">
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ peopleInHospital }}
+        </template>
+        <template v-slot:subtitle>
+          people in hospital with COVID.
+        </template>
+      </card>
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ peopleInICU }}
+        </template>
+        <template v-slot:subtitle>
+          people in ICU with COVID.
+        </template>
+      </card>
+      <card class="ireland__stats-card">
+        <template v-slot:title>
+          {{ totalPeopleVaccinated }} ({{ percentagePeopleFullyVaccinated }})
+        </template>
+        <template v-slot:subtitle>
+          people fully vaccinated.
+        </template>
+      </card>
+    </div>
     <div class="ireland__charts">
       <div class="ireland__chart">
         <chart-section
