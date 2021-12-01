@@ -1,5 +1,6 @@
 import { mapState } from 'vuex';
 import ChartSection from '@/components/ChartSection';
+import HospitalChart from '@/components/HospitalChart';
 import Card from '@/components/Card';
 
 export default {
@@ -7,6 +8,7 @@ export default {
 
   components: {
     ChartSection,
+    HospitalChart,
     Card,
   },
 
@@ -25,8 +27,7 @@ export default {
       'orderedIrishData',
       'totalPeopleVaccinated',
       'percentagePeopleFullyVaccinated',
-      'peopleInICU',
-      'peopleInHospital',
+      'hospitalData',
     ]),
 
     allIrishCases() {
@@ -35,6 +36,12 @@ export default {
 
     allIrishDeaths() {
       return this.allIrishData.map(({ newDeaths, date }) => ({ newDeaths, date }));
+    },
+
+    latestHospitalData() {
+      const [latestData] = this.hospitalData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      return latestData;
     },
   },
 };

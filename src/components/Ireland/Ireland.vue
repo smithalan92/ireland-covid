@@ -55,7 +55,7 @@
     <div class="ireland__stats">
       <card class="ireland__stats-card">
         <template v-slot:title>
-          {{ peopleInHospital }}
+          {{ latestHospitalData.peopleInHospital }}
         </template>
         <template v-slot:subtitle>
           people in hospital with COVID.
@@ -63,7 +63,7 @@
       </card>
       <card class="ireland__stats-card">
         <template v-slot:title>
-          {{ peopleInICU }}
+          {{ latestHospitalData.peopleInICU }}
         </template>
         <template v-slot:subtitle>
           people in ICU with COVID.
@@ -80,8 +80,13 @@
     </div>
     <div class="ireland__charts">
       <div class="ireland__chart">
-        <chart-section
+        <hospital-chart
           :force-inital-expand="true"
+          :records="hospitalData"/>
+      </div>
+      <div class="ireland__chart">
+        <chart-section
+          :force-inital-expand="false"
           :records="allIrishCases"
           type="stockChart"
           title="All time cases overview"

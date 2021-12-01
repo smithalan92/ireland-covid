@@ -15,8 +15,98 @@
     "totalCorkCasesInPast14Days": 6921,
     "totalPeopleVaccinated": 3793477,
     "percentagePeopleFullyVaccinated": "75.72",
-    "peopleInICU": 122,
-    "peopleInHospital": 579,
+    "hospitalData": [
+        {
+          "date": "2021-11-13T19:00:01Z",
+          "peopleInHospital": 549,
+          "peopleInICU": 96
+        },
+        {
+          "date": "2021-11-14T19:00:01Z",
+          "peopleInHospital": 582,
+          "peopleInICU": 106
+        },
+        {
+          "date": "2021-11-15T19:00:01Z",
+          "peopleInHospital": 582,
+          "peopleInICU": 106
+        },
+        {
+          "date": "2021-11-16T19:00:01Z",
+          "peopleInHospital": 614,
+          "peopleInICU": 114
+        },
+        {
+          "date": "2021-11-17T19:00:01Z",
+          "peopleInHospital": 634,
+          "peopleInICU": 119
+        },
+        {
+          "date": "2021-11-18T19:00:01Z",
+          "peopleInHospital": 643,
+          "peopleInICU": 118
+        },
+        {
+          "date": "2021-11-19T19:00:01Z",
+          "peopleInHospital": 643,
+          "peopleInICU": 118
+        },
+        {
+          "date": "2021-11-20T19:00:02Z",
+          "peopleInHospital": 640,
+          "peopleInICU": 121
+        },
+        {
+          "date": "2021-11-21T19:00:01Z",
+          "peopleInHospital": 669,
+          "peopleInICU": 125
+        },
+        {
+          "date": "2021-11-22T19:00:01Z",
+          "peopleInHospital": 685,
+          "peopleInICU": 126
+        },
+        {
+          "date": "2021-11-23T19:00:01Z",
+          "peopleInHospital": 638,
+          "peopleInICU": 130
+        },
+        {
+          "date": "2021-11-24T19:00:01Z",
+          "peopleInHospital": 611,
+          "peopleInICU": 132
+        },
+        {
+          "date": "2021-11-25T19:00:01Z",
+          "peopleInHospital": 598,
+          "peopleInICU": 126
+        },
+        {
+          "date": "2021-11-26T19:00:01Z",
+          "peopleInHospital": 572,
+          "peopleInICU": 118
+        },
+        {
+          "date": "2021-11-27T19:00:01Z",
+          "peopleInHospital": 536,
+          "peopleInICU": 121
+        },
+        {
+          "date": "2021-11-28T19:00:01Z",
+          "peopleInHospital": 566,
+          "peopleInICU": 117
+        },
+        {
+          "date": "2021-11-29T19:00:01Z",
+          "peopleInHospital": 579,
+          "peopleInICU": 115
+        },
+        {
+          "date": "2021-11-30T19:00:01Z",
+          "peopleInHospital": 579,
+          "peopleInICU": 122
+        }
+    ],
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",

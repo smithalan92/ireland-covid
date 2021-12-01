@@ -29,8 +29,7 @@ const state = {
   countyData: {},
   totalPeopleVaccinated: 0,
   percentagePeopleFullyVaccinated: 0,
-  peopleInICU: 0,
-  peopleInHospital: 0,
+  hospitalData: [],
 };
 
 const mutations = {
@@ -74,13 +73,11 @@ const mutations = {
   SET_OTHER_DATA(state, {
     totalPeopleVaccinated,
     percentagePeopleFullyVaccinated,
-    peopleInICU,
-    peopleInHospital,
+    hospitalData,
   }) {
     state.totalPeopleVaccinated = totalPeopleVaccinated;
     state.percentagePeopleFullyVaccinated = percentagePeopleFullyVaccinated;
-    state.peopleInICU = peopleInICU;
-    state.peopleInHospital = peopleInHospital;
+    state.hospitalData = hospitalData;
   },
 };
 
@@ -183,8 +180,7 @@ const actions = {
     commit('SET_OTHER_DATA', {
       totalPeopleVaccinated: util.formatNumber(caseData.totalPeopleVaccinated),
       percentagePeopleFullyVaccinated: `${caseData.percentagePeopleFullyVaccinated}%`,
-      peopleInICU: util.formatNumber(caseData.peopleInICU),
-      peopleInHospital: util.formatNumber(caseData.peopleInHospital),
+      hospitalData: caseData.hospitalData,
     });
   },
 };

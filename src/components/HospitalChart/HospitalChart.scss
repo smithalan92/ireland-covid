@@ -1,0 +1,34 @@
+.chart-section__title {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+        .chart-section__title-toggle-icon {
+            fill: rgba(#fff, 0.7);
+        }
+    }
+}
+
+.chart-section__title-text-wrapper {
+    flex: 1;
+}
+
+.chart-section__title-total-figures {
+    margin-top: 4px;
+    font-size: 0.8rem;
+}
+
+.chart-section__title-toggle {
+    padding: 4px;
+}
+
+.chart-section__title-toggle-icon {
+    fill: #fff;
+    width: 20px;
+
+    &--expanded {
+        transform: rotate(180deg);
+    }
+}
