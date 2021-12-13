@@ -7,14 +7,14 @@
     "irishCasesInPast14Days": 63731,
     "irishDeathsInPast30Days": 222,
     "irishDeathsInPast14Days": 136,
-    "lastDataUpdateDateTime": "2021-12-12T19:00:00.820Z",
+    "lastDataUpdateDateTime": "2021-12-13T19:00:01.118Z",
     "latestIrishDataDateTime": "2021-12-12T00:00:00.000Z",
     "latestCorkDataDateTime": "2021-12-08T00:00:00.000Z",
     "totalCasesInCork": 58636,
     "totalCorkCasesInPast30Days": 14306,
     "totalCorkCasesInPast14Days": 6202,
-    "totalPeopleVaccinated": 3808193,
-    "percentagePeopleFullyVaccinated": "76.01",
+    "totalPeopleVaccinated": 3812613,
+    "percentagePeopleFullyVaccinated": "76.10",
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -6076,6 +6076,11 @@
             "date": "2021-12-12T19:00:01.371Z",
             "peopleInHospital": 504,
             "peopleInICU": 109
+        },
+        {
+            "date": "2021-12-13T19:00:01.452Z",
+            "peopleInHospital": 518,
+            "peopleInICU": 108
         }
     ]
 }
