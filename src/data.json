@@ -1,20 +1,20 @@
 {
-    "totalIrishCases": 930598,
+    "totalIrishCases": 956720,
     "totalIrishDeaths": 5952,
-    "changeInIrishCases": 21926,
+    "changeInIrishCases": 26122,
     "changeInIrishDeaths": null,
-    "irishCasesInPast30Days": 323863,
-    "irishCasesInPast14Days": 239041,
+    "irishCasesInPast30Days": 345963,
+    "irishCasesInPast14Days": 251398,
     "irishDeathsInPast30Days": 164,
     "irishDeathsInPast14Days": 62,
-    "lastDataUpdateDateTime": "2022-01-07T19:00:00.529Z",
-    "latestIrishDataDateTime": "2022-01-07T00:00:00.000Z",
+    "lastDataUpdateDateTime": "2022-01-08T19:00:00.519Z",
+    "latestIrishDataDateTime": "2022-01-08T00:00:00.000Z",
     "latestCorkDataDateTime": "2021-12-22T00:00:00.000Z",
     "totalCasesInCork": 66153,
-    "totalCorkCasesInPast30Days": 8165,
+    "totalCorkCasesInPast30Days": 7705,
     "totalCorkCasesInPast14Days": 0,
-    "totalPeopleVaccinated": 3843812,
-    "percentagePeopleFullyVaccinated": "76.72",
+    "totalPeopleVaccinated": 3845019,
+    "percentagePeopleFullyVaccinated": "76.75",
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -2583,6 +2583,10 @@
         {
             "date": "2021-12-22T00:00:00.000Z",
             "newCases": 516
+        },
+        {
+            "date": "2021-12-22T00:00:00.000Z",
+            "newCases": 0
         },
         {
             "date": "2021-12-22T00:00:00.000Z",
@@ -6026,6 +6030,11 @@
             "date": "2022-01-07T00:00:00.000Z",
             "newCases": 21926,
             "newDeaths": null
+        },
+        {
+            "date": "2022-01-08T00:00:00.000Z",
+            "newCases": 26122,
+            "newDeaths": null
         }
     ],
     "countyData": {
@@ -6440,6 +6449,11 @@
             "date": "2022-01-07T19:00:00.870Z",
             "peopleInHospital": 936,
             "peopleInICU": 84
+        },
+        {
+            "date": "2022-01-08T19:00:00.813Z",
+            "peopleInHospital": 917,
+            "peopleInICU": 83
         }
     ]
 }
