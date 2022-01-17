@@ -1,20 +1,20 @@
 {
-    "totalIrishCases": 1103489,
+    "totalIrishCases": 1109818,
     "totalIrishDeaths": 6035,
-    "changeInIrishCases": 10753,
+    "changeInIrishCases": 6329,
     "changeInIrishDeaths": null,
-    "irishCasesInPast30Days": 459367,
-    "irishCasesInPast14Days": 274578,
+    "irishCasesInPast30Days": 458363,
+    "irishCasesInPast14Days": 263921,
     "irishDeathsInPast30Days": 200,
     "irishDeathsInPast14Days": 123,
-    "lastDataUpdateDateTime": "2022-01-16T19:00:00.810Z",
-    "latestIrishDataDateTime": "2022-01-16T00:00:00.000Z",
+    "lastDataUpdateDateTime": "2022-01-17T19:00:00.829Z",
+    "latestIrishDataDateTime": "2022-01-17T00:00:00.000Z",
     "latestCorkDataDateTime": "2021-12-22T00:00:00.000Z",
     "totalCasesInCork": 66153,
-    "totalCorkCasesInPast30Days": 3774,
+    "totalCorkCasesInPast30Days": 3301,
     "totalCorkCasesInPast14Days": 0,
-    "totalPeopleVaccinated": 3853920,
-    "percentagePeopleFullyVaccinated": "76.92",
+    "totalPeopleVaccinated": 3855376,
+    "percentagePeopleFullyVaccinated": "76.95",
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -2583,6 +2583,10 @@
         {
             "date": "2021-12-22T00:00:00.000Z",
             "newCases": 516
+        },
+        {
+            "date": "2021-12-22T00:00:00.000Z",
+            "newCases": 0
         },
         {
             "date": "2021-12-22T00:00:00.000Z",
@@ -6107,6 +6111,11 @@
             "date": "2022-01-16T00:00:00.000Z",
             "newCases": 10753,
             "newDeaths": null
+        },
+        {
+            "date": "2022-01-17T00:00:00.000Z",
+            "newCases": 6329,
+            "newDeaths": null
         }
     ],
     "countyData": {},
@@ -6435,6 +6444,11 @@
             "date": "2022-01-16T19:00:01.103Z",
             "peopleInHospital": 961,
             "peopleInICU": 88
+        },
+        {
+            "date": "2022-01-17T19:00:01.127Z",
+            "peopleInHospital": 1006,
+            "peopleInICU": 97
         }
     ]
 }
