@@ -1,20 +1,20 @@
 {
-    "totalIrishCases": 1122428,
+    "totalIrishCases": 1127951,
     "totalIrishDeaths": 6087,
-    "changeInIrishCases": 6843,
-    "changeInIrishDeaths": 52,
-    "irishCasesInPast30Days": 461050,
-    "irishCasesInPast14Days": 237573,
+    "changeInIrishCases": 5523,
+    "changeInIrishDeaths": null,
+    "irishCasesInPast30Days": 461294,
+    "irishCasesInPast14Days": 219279,
     "irishDeathsInPast30Days": 252,
     "irishDeathsInPast14Days": 135,
-    "lastDataUpdateDateTime": "2022-01-19T19:00:00.581Z",
-    "latestIrishDataDateTime": "2022-01-19T00:00:00.000Z",
+    "lastDataUpdateDateTime": "2022-01-20T19:00:00.845Z",
+    "latestIrishDataDateTime": "2022-01-20T00:00:00.000Z",
     "latestCorkDataDateTime": "2021-12-22T00:00:00.000Z",
     "totalCasesInCork": 66153,
-    "totalCorkCasesInPast30Days": 1807,
+    "totalCorkCasesInPast30Days": 1384,
     "totalCorkCasesInPast14Days": 0,
-    "totalPeopleVaccinated": 3857058,
-    "percentagePeopleFullyVaccinated": "76.99",
+    "totalPeopleVaccinated": 3858030,
+    "percentagePeopleFullyVaccinated": "77.01",
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -2583,6 +2583,10 @@
         {
             "date": "2021-12-22T00:00:00.000Z",
             "newCases": 516
+        },
+        {
+            "date": "2021-12-22T00:00:00.000Z",
+            "newCases": 0
         },
         {
             "date": "2021-12-22T00:00:00.000Z",
@@ -6134,6 +6138,11 @@
             "date": "2022-01-19T00:00:00.000Z",
             "newCases": 6843,
             "newDeaths": 52
+        },
+        {
+            "date": "2022-01-20T00:00:00.000Z",
+            "newCases": 5523,
+            "newDeaths": null
         }
     ],
     "countyData": {},
@@ -6476,6 +6485,11 @@
         {
             "date": "2022-01-19T19:00:00.843Z",
             "peopleInHospital": 911,
+            "peopleInICU": 90
+        },
+        {
+            "date": "2022-01-20T19:00:01.215Z",
+            "peopleInHospital": 896,
             "peopleInICU": 90
         }
     ]
