@@ -1,20 +1,20 @@
 {
-    "totalIrishCases": 1153666,
-    "totalIrishDeaths": 6087,
-    "changeInIrishCases": 4006,
-    "changeInIrishDeaths": null,
-    "irishCasesInPast30Days": 437940,
-    "irishCasesInPast14Days": 132363,
-    "irishDeathsInPast30Days": 197,
-    "irishDeathsInPast14Days": 135,
-    "lastDataUpdateDateTime": "2022-01-25T19:00:00.776Z",
-    "latestIrishDataDateTime": "2022-01-25T00:00:00.000Z",
-    "latestCorkDataDateTime": "2021-12-24T00:00:00.000Z",
+    "totalIrishCases": 1159271,
+    "totalIrishDeaths": 6136,
+    "changeInIrishCases": 5605,
+    "changeInIrishDeaths": 49,
+    "irishCasesInPast30Days": 436810,
+    "irishCasesInPast14Days": 117059,
+    "irishDeathsInPast30Days": 246,
+    "irishDeathsInPast14Days": 101,
+    "lastDataUpdateDateTime": "2022-01-26T19:00:00.679Z",
+    "latestIrishDataDateTime": "2022-01-26T00:00:00.000Z",
+    "latestCorkDataDateTime": "2021-12-25T00:00:00.000Z",
     "totalCasesInCork": 66153,
     "totalCorkCasesInPast30Days": 0,
     "totalCorkCasesInPast14Days": 0,
-    "totalPeopleVaccinated": 3863129,
-    "percentagePeopleFullyVaccinated": "77.11",
+    "totalPeopleVaccinated": 3865324,
+    "percentagePeopleFullyVaccinated": "77.15",
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -2710,6 +2710,10 @@
         },
         {
             "date": "2021-12-24T00:00:00.000Z",
+            "newCases": 0
+        },
+        {
+            "date": "2021-12-25T00:00:00.000Z",
             "newCases": 0
         }
     ],
@@ -6188,6 +6192,11 @@
             "date": "2022-01-25T00:00:00.000Z",
             "newCases": 4006,
             "newDeaths": null
+        },
+        {
+            "date": "2022-01-26T00:00:00.000Z",
+            "newCases": 5605,
+            "newDeaths": 49
         }
     ],
     "countyData": {},
@@ -6561,6 +6570,11 @@
             "date": "2022-01-25T19:00:01.114Z",
             "peopleInHospital": 824,
             "peopleInICU": 79
+        },
+        {
+            "date": "2022-01-26T19:00:00.975Z",
+            "peopleInHospital": 739,
+            "peopleInICU": 74
         }
     ]
 }
