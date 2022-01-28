@@ -1,20 +1,20 @@
 {
-    "totalIrishCases": 1164536,
+    "totalIrishCases": 1169645,
     "totalIrishDeaths": 6136,
-    "changeInIrishCases": 5265,
+    "changeInIrishCases": 5109,
     "changeInIrishDeaths": null,
-    "irishCasesInPast30Days": 433069,
-    "irishCasesInPast14Days": 103420,
-    "irishDeathsInPast30Days": 246,
+    "irishCasesInPast30Days": 421750,
+    "irishCasesInPast14Days": 91464,
+    "irishDeathsInPast30Days": 224,
     "irishDeathsInPast14Days": 101,
-    "lastDataUpdateDateTime": "2022-01-27T19:00:01.029Z",
-    "latestIrishDataDateTime": "2022-01-27T00:00:00.000Z",
-    "latestCorkDataDateTime": "2021-12-25T00:00:00.000Z",
+    "lastDataUpdateDateTime": "2022-01-28T19:00:00.631Z",
+    "latestIrishDataDateTime": "2022-01-28T00:00:00.000Z",
+    "latestCorkDataDateTime": "2021-12-22T00:00:00.000Z",
     "totalCasesInCork": 66153,
-    "totalCorkCasesInPast30Days": 0,
-    "totalCorkCasesInPast14Days": 0,
-    "totalPeopleVaccinated": 3866510,
-    "percentagePeopleFullyVaccinated": "77.18",
+    "totalCorkCasesInPast30Days": 13723,
+    "totalCorkCasesInPast14Days": 5091,
+    "totalPeopleVaccinated": 3867866,
+    "percentagePeopleFullyVaccinated": "77.20",
     "corkData": [
         {
             "date": "2020-03-21T00:00:00.000Z",
@@ -2598,126 +2598,6 @@
         },
         {
             "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-22T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-23T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-24T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-24T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-24T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-25T00:00:00.000Z",
-            "newCases": 0
-        },
-        {
-            "date": "2021-12-25T00:00:00.000Z",
             "newCases": 0
         }
     ],
@@ -6206,6 +6086,11 @@
             "date": "2022-01-27T00:00:00.000Z",
             "newCases": 5265,
             "newDeaths": null
+        },
+        {
+            "date": "2022-01-28T00:00:00.000Z",
+            "newCases": 5109,
+            "newDeaths": null
         }
     ],
     "countyData": {},
@@ -6589,6 +6474,11 @@
             "date": "2022-01-27T19:00:01.325Z",
             "peopleInHospital": 708,
             "peopleInICU": 71
+        },
+        {
+            "date": "2022-01-28T19:00:00.904Z",
+            "peopleInHospital": 707,
+            "peopleInICU": 69
         }
     ]
 }
