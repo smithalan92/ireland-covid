@@ -7,7 +7,7 @@
     "irishCasesInPast14Days": 50188,
     "irishDeathsInPast30Days": 303,
     "irishDeathsInPast14Days": 114,
-    "lastDataUpdateDateTime": "2022-03-04T19:00:00.596Z",
+    "lastDataUpdateDateTime": "2022-03-05T19:00:00.559Z",
     "latestIrishDataDateTime": "2022-03-04T00:00:00.000Z",
     "latestCorkDataDateTime": "2022-03-03T00:00:00.000Z",
     "totalCasesInCork": 130500,
@@ -7232,6 +7232,11 @@
         {
             "date": "2022-03-04T19:00:00.880Z",
             "peopleInHospital": 670,
+            "peopleInICU": 43
+        },
+        {
+            "date": "2022-03-05T19:00:00.846Z",
+            "peopleInHospital": 673,
             "peopleInICU": 43
         }
     ]
