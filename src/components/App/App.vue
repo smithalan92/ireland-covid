@@ -8,6 +8,11 @@
         @select-tab="selectTab"/>
     </div>
     <div class="app__container">
+      <div class="app__deprecation">
+        These dashboards are no longer updated as COVID updates are
+        <a href="https://www.thejournal.ie/covid-19-cases-daily-updates-end-5751333-Apr2022/" target="_blank">no longer published daily</a>
+        by the department of Health.
+      </div>
       <div class="app__last-updated">
        Last updated on the {{ lastDataUpdateDateTime }}
       </div>

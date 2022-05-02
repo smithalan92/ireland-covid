@@ -2,6 +2,8 @@
 
 A simple app to document COVID-19 cases in Ireland ( with an emphasis on Cork ) using data sourced from the [HPSC/HSE Geohive](https://covid19ireland-geohive.hub.arcgis.com/).
 
+### These dashboarda are no longer updated as daily covid updates have ended in Ireland.
+
 View - [covid.mralansmith.com/](http://covid.mralansmith.com)
 
 
